@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navigation/>
+    <NavigationBar/>
     <!-- Header -->
     <header>
       <div class="container">
