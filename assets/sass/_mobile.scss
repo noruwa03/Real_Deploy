@@ -1,5 +1,4 @@
 @media screen and(max-width: 480px) {
-
   header {
     margin-top: 4rem;
     padding: 3rem 0;
@@ -9,7 +8,6 @@
 
       h1 {
         font-size: 1.7em;
-
       }
 
       p {
@@ -18,10 +16,8 @@
       }
 
       .anchor-link {
-
         padding: 0.8rem 1rem;
         font-size: 1em;
-
       }
     }
   }
@@ -52,7 +48,6 @@
 
   .our-approach {
     padding: 3rem 0;
-
 
     .heading {
       width: 90%;
@@ -114,6 +109,11 @@
 
       .contact-form {
         width: 100%;
+
+       .nda {
+          font-size: 0.89em;
+          transform: translateY(-1rem);
+        }
       }
 
       .address {
@@ -143,12 +143,11 @@
 
     input {
       margin-top: 0.6rem;
-      width: 65%;
+      width: 64%;
     }
 
     button {
-      width: 35%;
-      
+      width: 33%;
     }
   }
 }

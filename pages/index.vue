@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavigationBar/>
+    <NavigationBar />
     <!-- Header -->
     <header>
       <div class="container">
@@ -218,7 +218,9 @@
             <div class="approach-card my-2">
               <h5 class="text-center">In-depth Research & Development:</h5>
               <p class="text-center">
-                Our approach to design and product development involves a thorough research of the market, the users, stakeholders, trends and future expectation that will result in useable product.
+                Our approach to design and product development involves a
+                thorough research of the market, the users, stakeholders, trends
+                and future expectation that will result in useable product.
               </p>
             </div>
           </div>
@@ -226,7 +228,9 @@
             <div class="approach-card my-2">
               <h5 class="text-center">Intuitive Design</h5>
               <p class="pt-4 pb-5 text-center">
-                Our products are designed to be accessible, intuitive, and usable. Sophisticated enough for tech savvy users and simple for casual users.
+                Our products are designed to be accessible, intuitive, and
+                usable. Sophisticated enough for tech savvy users and simple for
+                casual users.
               </p>
             </div>
           </div>
@@ -234,8 +238,10 @@
             <div class="approach-card my-2">
               <h5 class="text-center">Excellent Services</h5>
               <p class="text-center">
-                We believe that great products speaks for themselves and help you reach your business goals faster. On this, rest our mission of delivering highest quality service. We research, test run, reiterate, run QA and review before delivering your projects.
-
+                We believe that great products speaks for themselves and help
+                you reach your business goals faster. On this, rest our mission
+                of delivering highest quality service. We research, test run,
+                reiterate, run QA and review before delivering your projects.
               </p>
             </div>
           </div>
@@ -360,8 +366,11 @@
 
                 <button>Submit</button>
                 <div class="">
-                  <span class="me-2"><input type="checkbox" /> </span>
-                  I want to protect my data by signing an NDA
+                  <span class="nda"
+                    ><input type="checkbox" class="me-1" /> I want to protect my
+                    data by signing an NDA</span
+                  >
+                  <!-- <span class="nda"></span> -->
                 </div>
               </form>
             </div>
@@ -393,12 +402,12 @@
     </div>
 
     <!-- End of Contact Us -->
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
-}
+  name: "IndexPage",
+};
 </script>
