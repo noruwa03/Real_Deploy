@@ -1,0 +1,154 @@
+@media screen and(max-width: 480px) {
+
+  header {
+    margin-top: 4rem;
+    padding: 3rem 0;
+
+    .container {
+      width: 96%;
+
+      h1 {
+        font-size: 1.7em;
+
+      }
+
+      p {
+        margin-top: 1.2rem;
+        font-size: 1.03em;
+      }
+
+      .anchor-link {
+
+        padding: 0.8rem 1rem;
+        font-size: 1em;
+
+      }
+    }
+  }
+
+  .services {
+    padding: 3rem 0;
+
+    h2 {
+      font-size: 1.7em;
+      font-weight: bolder;
+      padding: 0 0.5rem;
+    }
+  }
+
+  .about-us {
+    padding: 3rem 0;
+
+    h2 {
+      font-size: 1.7em;
+    }
+
+    &-desc {
+      width: 93%;
+
+      font-size: 1.1em;
+    }
+  }
+
+  .our-approach {
+    padding: 3rem 0;
+
+
+    .heading {
+      width: 90%;
+      margin: 0 auto;
+      h4 {
+        font-size: 1.7em;
+        font-weight: bolder;
+      }
+    }
+
+    .approach-card {
+      padding: 2rem;
+
+      box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
+      border-radius: 0.6rem;
+
+      h5 {
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1.04em;
+      }
+    }
+  }
+
+  .latest-news {
+    padding: 3rem 0;
+
+    h1 {
+      font-size: 1.7em;
+
+      width: 100%;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .contact-us {
+    padding: 3rem 0;
+    h1 {
+      width: 100%;
+      font-size: 1.7em;
+    }
+
+    p {
+      font-size: 1em;
+
+      span {
+        display: block;
+      }
+    }
+
+    .row-item {
+      @include flexItem(row, space-between);
+
+      .contact-form {
+        width: 100%;
+      }
+
+      .address {
+        margin-top: 3rem;
+        h4 {
+          font-weight: bold;
+        }
+        div {
+          margin-top: 2rem;
+          font-size: 1em;
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 3rem 0;
+    .subscribe {
+      margin-top: 1rem;
+      font-size: 1.7em;
+
+      width: 100%;
+    }
+
+    input {
+      margin-top: 0.6rem;
+      width: 65%;
+    }
+
+    button {
+      width: 35%;
+      
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@media screen and(max-width: 768px) {
+
+  header {
+    
+
+    .container {
+      width: 96%;
+
+      h1 {
+        font-size: 2em;
+        font-weight: bolder;
+      }
+
+      p {
+        margin-top: 1.2rem;
+        font-size: 1.03em;
+      }
+
+      .anchor-link {
+      
+        padding: 0.8rem 1rem;
+        font-size: 1em;
+   
+      }
+    }
+  }
+
+  .services {
+    padding: 4rem 0;
+
+    h2 {
+      font-size: 1.8em;
+      font-weight: bolder;
+    }
+  }
+
+  .latest-news {
+    padding: 5rem 0;
+
+    h1 {
+      font-size: 1.8em;
+
+      width: 100%;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .contact-us {
+    padding: 5rem 0;
+    h1 {
+      width: 100%;
+      font-size: 1.8em;
+    }
+
+    p {
+      font-size: 1em;
+
+      span {
+        display: block;
+      }
+    }
+
+    .row-item {
+      @include flexItem(row, space-between);
+
+      .contact-form {
+        width: 100%;
+      }
+
+      .address {
+        margin-top: 3rem;
+        h4 {
+          font-weight: bold;
+        }
+        div {
+          margin-top: 2rem;
+          font-size: 1em;
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .subscribe {
+      margin-top: 1rem;
+      font-size: 1.7em;
+
+      width: 100%;
+    }
+
+    input {
+      margin-top: 0.6rem;
+      width: 70%;
+    }
+
+    button {
+      width: 30%;
+    }
+  }
+}

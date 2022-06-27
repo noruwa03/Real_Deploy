@@ -1,0 +1,545 @@
+/* Description: Master CSS file */
+
+/*****************************************
+Table Of Contents:
+- Css Reset
+- Colors
+- Mixins
+- Font
+- General Styles
+- Services
+- About Us
+- Our Approach
+- Insight
+- Contact Us
+- Footer
+- Media Queries
+******************************************/
+
+/*****************************************
+
+******************************************/
+
+/**********************/
+/*     Font    */
+/**********************/
+
+@import "fonts";
+
+/**************************/
+/*        Css Reset       */
+/**************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
+  font-family: $dmSans;
+  list-style: none;
+
+  a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
+
+/**********************/
+/*       Colors       */
+/**********************/
+@import "colors";
+
+/**********************/
+/*       Mixins       */
+/**********************/
+@import "mixins";
+
+/**********************/
+/*   General Styles   */
+/**********************/
+
+.logo-image {
+  display: none;
+}
+
+nav {
+  padding: 2rem 0;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
+  .nav-item-container {
+    width: 87%;
+    margin: 0 auto;
+
+    @include flexItem(row, space-between);
+
+    .navbar-brand {
+      width: 12%;
+
+      @include flexItem(row, space-between);
+      align-items: center;
+    }
+
+    .nav-item-list {
+      transform: translateY(1rem);
+
+      width: 56%;
+
+      @include flexItem(row, space-between);
+
+      .nav-item {
+        .nav-link {
+          font-size: 1.12em;
+          color: $heading-color;
+        }
+      }
+    }
+
+    .get-free-quote {
+      margin-top: 0.8rem;
+      .anchor-link {
+        background-color: $black;
+        padding: 0.8rem 1rem;
+        font-size: 1.1em;
+        color: $white;
+      }
+    }
+  }
+}
+
+header {
+  margin-top: 2rem;
+  padding: 5rem 0;
+
+  .container {
+    width: 60%;
+
+    h1 {
+      font-size: 3.5em;
+      font-weight: bolder;
+      color: $heading-color;
+
+      span {
+        color: $blue;
+      }
+    }
+
+    p {
+      margin-top: 2rem;
+      font-size: 1.5em;
+      color: $text-color;
+    }
+
+    .anchor-link {
+      background-color: $black;
+      padding: 0.8rem 1rem;
+      font-size: 1.1em;
+      color: $white;
+    }
+  }
+}
+
+/**********************/
+/*      Services      */
+/**********************/
+
+.services {
+  padding: 5rem 0;
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: $heading-color;
+  }
+
+  .container-lg {
+    .service-card {
+      padding: 2rem;
+      background: #f1f1f1;
+      height: 20rem;
+      /* grad */
+
+      box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
+
+      border-radius: 0.6rem;
+      margin: 0.9rem 0;
+
+      h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $black;
+        margin: 1.1rem 0;
+      }
+
+      p {
+        font-size: 1.06em;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+/**********************/
+/*      About Us      */
+/**********************/
+
+.about-us {
+  padding: 5rem 0;
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: $heading-color;
+  }
+
+  &-desc {
+    width: 50%;
+    margin: 1rem auto;
+    font-size: 1.26em;
+    color: $text-color;
+  }
+
+  .container-lg {
+    .about-card {
+      padding: 2rem 1rem;
+      background: $white;
+
+      box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
+
+      border-radius: 0.6rem;
+      margin: 0.9rem 0;
+      height: 22rem;
+
+      h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $black;
+        margin: 1.1rem 0;
+      }
+
+      p {
+        font-size: 1.06em;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+/**********************/
+/*    Our Approach    */
+/**********************/
+
+.our-approach {
+  padding: 5rem 0;
+  background-color: $gray;
+
+  .heading {
+    width: 50%;
+    margin: 0 auto;
+    h4 {
+      font-size: 2.6em;
+      font-weight: bolder;
+      color: $heading-color;
+    }
+  }
+
+  .approach-card {
+    padding: 2rem;
+    background-color: $white;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
+    border-radius: 0.6rem;
+    height: 18rem;
+
+    h5 {
+      font-size: 1.55em;
+      font-weight: bold;
+      color: $black;
+    }
+
+    p {
+      font-size: 1.06em;
+    }
+  }
+}
+
+/**********************/
+/*       Latest News      */
+/**********************/
+.latest-news {
+  padding: 5rem 0;
+
+  h1 {
+    font-size: 2.6em;
+    font-weight: bolder;
+
+    color: $heading-color;
+  }
+
+  p {
+    font-size: 1.16em;
+    color: $text-color;
+  }
+}
+
+/**********************/
+/*     Contact Us     */
+/**********************/
+
+.contact-us {
+  padding: 5rem 0;
+  h1 {
+    width: 45%;
+    font-size: 3em;
+    font-weight: bolder;
+  }
+
+  p {
+    font-size: 1.16em;
+    color: $text-color;
+
+    span {
+      display: block;
+    }
+  }
+
+  .row-item {
+    @include flexItem(row, space-between);
+
+    .contact-form {
+      width: 50%;
+
+      .wrapper {
+        width: 100%;
+
+        // @include flexItem(row, space-between);
+
+        .first-row {
+          @include flexItem(row, space-between);
+          margin: 0.4rem 0rem;
+          width: 100%;
+
+          .input-data {
+            height: 2.2rem;
+            width: 100%;
+            position: relative;
+            margin: 0.98rem 0;
+            input {
+              outline: none;
+              width: 100%;
+              height: 100%;
+              border: none;
+              border-bottom: 0.13rem solid silver;
+              color: $heading-color;
+              font-size: 1em;
+              font-weight: 500;
+              background: transparent;
+            }
+
+            label {
+              pointer-events: none;
+              position: absolute;
+              transition: all 0.3s ease;
+              bottom: 0.98rem;
+              left: 0;
+              color: $heading-color;
+            }
+          }
+        }
+
+        .form-row {
+          @include flexItem(row, space-between);
+          margin: 0.4rem 0rem;
+          width: 100%;
+
+          .address {
+            height: 2.2rem;
+            width: 63%;
+            position: relative;
+            margin: 0.98rem 0;
+            input {
+              outline: none;
+              width: 100%;
+              height: 100%;
+              border: none;
+              border-bottom: 0.13rem solid silver;
+              color: $heading-color;
+              font-size: 1em;
+              font-weight: 500;
+              background: transparent;
+            }
+
+            label {
+              pointer-events: none;
+              position: absolute;
+              transition: all 0.3s ease;
+              bottom: 0.98rem;
+              left: 0;
+              color: $heading-color;
+            }
+          }
+
+          .post-code {
+            height: 2.2rem;
+            width: 33%;
+            position: relative;
+            margin: 0.98rem 0;
+            input {
+              outline: none;
+              width: 100%;
+              height: 100%;
+              border: none;
+              border-bottom: 0.13rem solid silver;
+              color: $heading-color;
+              font-size: 1em;
+              font-weight: 500;
+              background: transparent;
+            }
+
+            label {
+              pointer-events: none;
+              position: absolute;
+              transition: all 0.3s ease;
+              bottom: 0.98rem;
+              left: 0;
+              color: $heading-color;
+            }
+          }
+        }
+
+        input:focus ~ label,
+        input:valid ~ label {
+          transform: translateY(-0.9rem);
+          font-size: 0.9em;
+          color: $text-color;
+          transition: all 0.3s ease;
+        }
+
+        .underline {
+          height: 0.13rem;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+        }
+
+        .underline::before {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          content: "";
+          transform: scaleX(0);
+          transition: all 0.3s ease;
+          background: $heading-color;
+          transform-origin: center;
+        }
+
+        .input-data input:focus ~ .underline::before,
+        .input-data input:valid ~ .underline::before {
+          transform: scaleX(1);
+        }
+
+        button {
+          margin: 1.6rem 0;
+          width: 100%;
+          padding: 0.7rem 0;
+          background-color: $black;
+          color: $white;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 0.1rem;
+        }
+
+        .heading {
+          text-align: center;
+          padding-top: 4rem;
+        }
+
+        .file-box {
+          margin-top: 2rem;
+          width: 100%;
+          height: 6rem;
+          border: 0.1rem dashed $text-color;
+          @include flexItem(row, center);
+          align-items: center;
+          cursor: pointer;
+
+          span {
+            color: $text-color;
+          }
+        }
+
+        .upload-instruction {
+          margin-top: 1rem;
+          font-size: 0.86em;
+          color: $text-color;
+        }
+      }
+    }
+
+    .address {
+      h4 {
+        font-weight: bold;
+      }
+      div {
+        margin-top: 2rem;
+        font-size: 1.07em;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 5rem 0;
+  background-color: $black;
+
+  h5 {
+    color: $white;
+  }
+
+  a {
+    display: block;
+    color: $text-color;
+    font-size: 0.95em;
+    margin: 1rem 0;
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .subscribe {
+    font-size: 2.4em;
+    color: $white;
+    width: 70%;
+    font-weight: bold;
+  }
+
+  input {
+    width: 70%;
+    padding: 0.7rem 1rem;
+    border: 1px solid rgba(235, 240, 249, 0.3);
+    border-radius: 4px;
+    background-color: $black;
+    color: $white;
+  }
+
+  button {
+    padding: 0.8rem 1rem;
+    width: 26%;
+    border: none;
+    backdrop-filter: blur(80px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+@import "xlg";
+@import "lg";
+@import "sm";
+@import "mobile";
