@@ -154,6 +154,7 @@ nav .nav-item-container .get-free-quote .anchor-link {
   padding: 0.8rem 1rem;
   font-size: 1.1em;
   color: #fff;
+  cursor: pointer;
 }
 
 header {
@@ -186,6 +187,7 @@ header .container .anchor-link {
   padding: 0.8rem 1rem;
   font-size: 1.1em;
   color: #fff;
+  cursor: pointer;
 }
 
 /**********************/
@@ -772,7 +774,7 @@ footer button {
   }
   nav.active .nav-item-container .navbar-brand {
     position: fixed;
-    top: 3%;
+    top: 2.2%;
     left: 3%;
     z-index: 60;
   }
@@ -807,16 +809,18 @@ footer button {
         -ms-flex-align: center;
             align-items: center;
     z-index: 50;
+    padding: 0;
+    margin: 0;
   }
   nav.active .nav-item-container .nav-item-list.active .nav-item .nav-link {
+    width: 100%;
     font-size: 1.3em;
-    text-transform: uppercase;
-    line-height: 1.2;
+    text-transform: capitalize;
     font-weight: 800;
     color: #242956;
     -webkit-transition: all 250ms linear;
     transition: all 250ms linear;
-    margin: 1rem 0;
+    margin: 1rem  0;
   }
   nav.active .nav-item-container .nav-item-list.active .nav-item .nav-link:hover {
     text-decoration: none;

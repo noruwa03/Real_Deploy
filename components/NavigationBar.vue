@@ -32,7 +32,7 @@
         </ul>
 
         <div class="get-free-quote">
-          <a class="anchor-link" href=""> Get a free quote </a>
+          <span class="anchor-link" @click="goto"> Get a free quote </span>
  
         </div>
       </div>
@@ -56,9 +56,15 @@ export default {
       nav.classList.toggle("active");
       navItem.classList.toggle("active");
       navIcon2.classList.toggle("open");
+    }
+
+    const goto = () => {
+      const el = document.querySelector("#contact");
+      el.scrollIntoView(false);
+      
     };
     return {
-      menuHandler
+      menuHandler, goto
     }
   },
 

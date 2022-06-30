@@ -13,7 +13,9 @@
           </p>
 
           <div class="mt-5">
-            <a class="anchor-link" href=""> Get a free quote </a>
+            <span class="anchor-link" @click="goto">
+              Get a free quote
+            </span>
           </div>
         </div>
       </div>
@@ -49,7 +51,7 @@
             <div class="service-card my-2">
               <div class="text-center">
                 <img src="@/assets/images/saas-app-dev.svg" alt="" />
-                <h3>SaaS App development</h3>
+                <h3>SaaS App Development</h3>
                 <p>
                   we create custom SaaS solutions that are market ready,
                   comprehensive, and customer friendly for increased business
@@ -62,7 +64,7 @@
             <div class="service-card my-2">
               <div class="text-center">
                 <img src="@/assets/images/mobile-app-dev.svg" alt="" />
-                <h3 class="pt-2">Mobile App development</h3>
+                <h3 class="pt-2">Mobile App Development</h3>
                 <p class="pb-5">
                   We build mobile apps that delight users, run smoothly, and
                   loads faster for both Android and iOS.
@@ -74,7 +76,7 @@
             <div class="service-card my-2">
               <div class="text-center">
                 <img src="@/assets/images/block-dev.svg" alt="" />
-                <h3>Blockchain development</h3>
+                <h3>Blockchain Development</h3>
                 <p class="pb-4">
                   Blockchain is the future and our team has the reputation of
                   validating your ideas and building you great products
@@ -87,7 +89,7 @@
             <div class="service-card my-2">
               <div class="text-center">
                 <img src="@/assets/images/ux-ui-design.svg" alt="" />
-                <h3>UX/UI design</h3>
+                <h3>UX/UI Design</h3>
                 <p class="pb-4">
                   Our designers bring world class expertise to the table. Making
                   a bold statement from ideation to finished designs.
@@ -165,7 +167,7 @@
             <div class="about-card my-2">
               <div class="text-center">
                 <img src="@/assets/images/clock.svg" alt="" />
-                <h3>Tailer Mode Development</h3>
+                <h3>Tailor Made Development</h3>
                 <p class="pb-1">
                   We develop products from the idea stage using scalable and
                   dynamic systems to meet up to ever changing trends.
@@ -279,7 +281,7 @@
     <!-- End of Valuable Insight -->
 
     <!-- Contact Us -->
-    <div class="contact-us">
+    <div class="contact-us" id="contact"  >
       <div class="container-lg">
         <h1 class="pb-4">Got a project or partnership in mind?</h1>
         <!-- <p>
@@ -287,10 +289,10 @@
           <span>Fill out the form to get a free consultation.</span>
         </p> -->
 
-        <div class="row-item">
+        <div class="row-item" >
           <div class="contact-form">
             <div class="wrapper">
-              <form action="" method="" enctype="multipart/form-data">
+              <form >
                 <div class="first-row">
                   <div class="input-data">
                     <input type="text" name="" id="" required />
@@ -379,12 +381,12 @@
           <div class="address">
             <h4>Offices</h4>
             <div>
-              United States <span> 500 5th Avenue Suite 400, NY 10110 </span>
+              United States <span> 30 N Gould St R, Sheridan, WY 82801 </span>
             </div>
-            <div>United Kingdom <span> High St, Bromley BR1 1DN </span></div>
+            <div>Nigeria <span> 17 Ozo Ocheoha Street Independence Layout Enugu </span></div>
 
             <div>
-              France <span> 80 avenue des Terriors de France, Paris </span>
+              Tanzania <span> 1 Morogoro Road, Dar Es Salaam </span>
             </div>
 
             <h4 class="mt-5">For Quick Inquiries</h4>
@@ -407,7 +409,24 @@
 </template>
 
 <script>
+
+
 export default {
-  name: "IndexPage",
+  setup() {
+    
+    const goto = () => {
+      const el = document.querySelector("#contact");
+      el.scrollIntoView(false);
+      
+    };
+    
+    return {
+      goto,
+    };
+  },
 };
+
+// export default {
+//   name: "IndexPage",
+// };
 </script>
