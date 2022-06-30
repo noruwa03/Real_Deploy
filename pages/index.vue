@@ -279,9 +279,10 @@
       </div>
     </div> -->
     <!-- End of Valuable Insight -->
-
+    
     <!-- Contact Us -->
-    <div class="contact-us" id="contact"  >
+    <div class="contact-us"   >
+     
       <div class="container-lg">
         <h1 class="pb-4">Got a project or partnership in mind?</h1>
         <!-- <p>
@@ -326,28 +327,28 @@
                     <label for="">Contact name</label>
                   </div>
                 </div>
-                <div class="first-row">
+                <div class="first-row" >
                   <div class="input-data">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
                     <label for="">Contact phone</label>
                   </div>
                 </div>
-                <div class="first-row">
+                <div class="first-row" >
                   <div class="input-data">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
                     <label for="">Email</label>
                   </div>
                 </div>
-                <div class="first-row">
+                <div class="first-row" id="contact">
                   <div class="input-data">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
                     <label for="">LinkedIn</label>
                   </div>
                 </div>
-                <div class="first-row">
+                <div class="first-row"  >
                   <div class="input-data">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
@@ -402,6 +403,7 @@
         </div>
       </div>
     </div>
+    
 
     <!-- End of Contact Us -->
     <Footer />
