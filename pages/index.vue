@@ -281,7 +281,7 @@
     <!-- End of Valuable Insight -->
     
     <!-- Contact Us -->
-    <div class="contact-us"   >
+    <div id="contact-us" class="contact-us"   >
      
       <div class="container-lg">
         <h1 class="pb-4">Got a project or partnership in mind?</h1>
@@ -392,7 +392,7 @@
 
             <h4 class="mt-5">For Quick Inquiries</h4>
             <div>
-              <img src="@/assets/images/information.svg" class="email-info me-2" alt="" />
+              <img src="@/assets/images/information.svg" class="email-info me-1" alt="" />
               contact@ecolabz.io
             </div>
            

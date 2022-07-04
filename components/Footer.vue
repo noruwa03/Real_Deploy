@@ -13,23 +13,23 @@
             <div class="col-lg-3 col-sm-3 col-6 my-3">
               <h5>Our team</h5>
               <a href="">About us</a>
-              <a href="">Team</a>
               <a href="">What we do</a>
-              <a href="">Contact</a>
+              <a href="">Careers</a>
+              <a href="">Press</a>
             </div>
             <div class="col-lg-3 col-sm-3 col-6 my-3">
               <h5>More</h5>
-              <a href="">Projects</a>
-              <a href="">Events</a>
-              <a href="">Donate</a>
+              <a href="">Solutions</a>
               <a href="">Blog</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Terms & Conditions</a>
             </div>
             <div class="col-lg-3 col-sm-3 col-6 my-3">
               <h5>Connect</h5>
               <a href="">Facebook</a>
-              <a href="">Instagram</a>
-              <a href="">Twitter</a>
               <a href="">LinkedIn</a>
+              <a href="">Twitter</a> 
+              <a href="">Instagram</a>                    
             </div>
           </div>
         </div>

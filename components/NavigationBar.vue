@@ -29,7 +29,7 @@
           <li @click="removeSidebar"  class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="">Jobs</a></li>
-          <li class="nav-item"><a class="nav-link" @click="goto" >Contact</a></li>
+          <li @click="removeSidebar" class="nav-item"><a class="nav-link" href="#contact-us" >Contact</a></li>
         </ul>
 
         <div class="get-free-quote">
