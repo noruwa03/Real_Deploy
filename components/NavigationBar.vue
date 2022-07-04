@@ -24,11 +24,12 @@
         <!-- End of Logo -->
 
         <ul class="nav-item-list">
-          <li class="nav-item"><a class="nav-link" href="">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="">Case Study</a></li>
-          <li class="nav-item"><a class="nav-link" href="">Services</a></li>
+          <li @click="removeSidebar" class="nav-item"><a class="nav-link" href="#about-us" >About</a></li>
+          
+          <li @click="removeSidebar"  class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="">Jobs</a></li>
-          <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" @click="goto" >Contact</a></li>
         </ul>
 
         <div class="get-free-quote">
@@ -63,8 +64,23 @@ export default {
       el.scrollIntoView(false);
       
     };
+
+    const removeSidebar = () => {
+      const navIcon2 = document.querySelector("#menu-btn");
+      const nav = document.querySelector("nav");
+      const navItem = document.querySelector(".nav-item-list");
+
+      nav.classList.toggle("active");
+      navItem.classList.toggle("active");
+      navIcon2.classList.toggle("open");
+      
+    };
+
+    
+
+    
     return {
-      menuHandler, goto
+      menuHandler, goto, removeSidebar, 
     }
   },
 

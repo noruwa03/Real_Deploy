@@ -23,7 +23,7 @@
     <!-- End of Header -->
 
     <!-- Services -->
-    <div class="services">
+    <div id="services" class="services">
       <div class="text-center mb-5">
         <h2>Our Services</h2>
       </div>
@@ -116,7 +116,7 @@
     <!-- End of Services -->
 
     <!-- About Us -->
-    <div class="about-us">
+    <div id="about-us" class="about-us">
       <div class="text-center mb-4">
         <h2>What Makes Ecolabz Different</h2>
         <p class="about-us-desc">
@@ -392,13 +392,10 @@
 
             <h4 class="mt-5">For Quick Inquiries</h4>
             <div>
-              <img src="@/assets/images/uk-flag.jpg" class="me-2" alt="" /> +44
-              7777777777
+              <img src="@/assets/images/information.svg" class="email-info me-2" alt="" />
+              contact@ecolabz.io
             </div>
-            <div>
-              <img src="@/assets/images/usa-flag.jpg" class="me-2" alt="" /> +1
-              3333333330
-            </div>
+           
           </div>
         </div>
       </div>

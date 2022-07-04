@@ -2,7 +2,7 @@
   .logo-image {
     display: block;
 
-    position: fixed;
+    position: absolute;
     top: 2.2%;
     left: 3%;
 
@@ -177,7 +177,7 @@
 
               &:hover {
                 text-decoration: none;
-                color: #ffeba7;
+                color: $green;
               }
             }
           }

@@ -143,6 +143,7 @@ nav .nav-item-container .nav-item-list {
 nav .nav-item-container .nav-item-list .nav-item .nav-link {
   font-size: 1.12em;
   color: #242956;
+  cursor: pointer;
 }
 
 nav .nav-item-container .get-free-quote {
@@ -163,7 +164,7 @@ header {
 }
 
 header .container {
-  width: 60%;
+  width: 52%;
 }
 
 header .container h1 {
@@ -173,7 +174,7 @@ header .container h1 {
 }
 
 header .container h1 span {
-  color: #4F80E1;
+  color: #0CDC12;
 }
 
 header .container p {
@@ -601,6 +602,10 @@ header .container .anchor-link {
   display: block;
 }
 
+.contact-us .row-item .address .email-info {
+  width: 1.3rem;
+}
+
 footer {
   padding: 5rem 0;
   background-color: #0B0706;
@@ -680,7 +685,7 @@ footer button {
 @media screen and (max-width: 992px) {
   .logo-image {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 2.2%;
     left: 3%;
   }
@@ -824,7 +829,7 @@ footer button {
   }
   nav.active .nav-item-container .nav-item-list.active .nav-item .nav-link:hover {
     text-decoration: none;
-    color: #ffeba7;
+    color: #0CDC12;
   }
   header {
     margin-top: 3.5rem;
