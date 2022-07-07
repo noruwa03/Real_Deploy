@@ -1,8 +1,5 @@
 @media screen and (max-width: 1200px) {
-
   header {
-
-
     .container {
       width: 60%;
 
@@ -25,7 +22,6 @@
 
   .contact-us {
     h1 {
-      width: 70%;
       font-size: 2.7em;
       font-weight: bolder;
     }
@@ -37,6 +33,519 @@
     h2 {
       font-size: 2em;
       font-weight: bolder;
+    }
+  }
+
+  footer {
+    h5 {
+      color: $white;
+    }
+
+    .brand-name {
+      font-size: 2.4em;
+      color: $white;
+
+      font-weight: bold;
+    }
+
+    .about {
+      color: $white;
+    }
+
+    .footer-anchor-link {
+      a {
+        display: block;
+        color: $white;
+        font-size: 0.95em;
+        margin: 1rem 0 0 1rem;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    .all-rights-reserved {
+      width: 100%;
+      margin-top: 1.5rem;
+      padding: 1rem 0;
+
+      p {
+        width: 91%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+   .contact-page {
+    padding: 5rem 0;
+
+    h1 {
+      font-weight: bolder;
+    }
+
+    .box {
+      width: 96%;
+      margin: 0 auto;
+      p {
+        color: #6f6c90;
+
+        font-size: 1.2em;
+      }
+    }
+
+    .contact-card {
+      width: 90%;
+      margin: 1.4rem auto;
+      padding: 2rem 1rem;
+      background: $white;
+
+      box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
+
+      border-radius: 1.3rem;
+
+      .progress-bar {
+        @include flexItem(row, space-between);
+
+        // margin: 40px 0;
+
+        .step {
+          text-align: center;
+          // width: 100%;
+          position: relative;
+
+          .check {
+            position: absolute;
+            left: 50%;
+            top: 70%;
+            font-size: 15px;
+            transform: translate(-50%, -50%);
+            display: none;
+          }
+
+          &:last-child .bullet {
+            &::before,
+            &::after {
+              display: none;
+            }
+          }
+
+          .bullet {
+            position: relative;
+            height: 2.4rem;
+            width: 2.4rem;
+            // border: 2px solid $black;
+            border-radius: 50%;
+            // display: inline-block;
+            background-color: #eff0f7;
+
+            @include flexItem(row, center);
+            align-items: center;
+            transition: 0.2;
+            color: #6f6c90;
+
+            &.active {
+              background-color: $black;
+              color: $white;
+            }
+
+            &::before,
+            &::after {
+              position: absolute;
+              content: "";
+              bottom: 14px;
+              right: -140px;
+              height: 6px;
+              width: 100px;
+              background-color: #eff0f7;
+              border-radius: 1rem;
+            }
+
+            &.active::after {
+              background-color: $black;
+              transform: scaleX(0);
+              transform-origin: left;
+              animation: animate 0.3s linear forwards;
+            }
+
+            @keyframes animate {
+              100% {
+                transform: scaleX(1);
+              }
+            }
+
+            span {
+              font-weight: 500;
+              font-size: 1.2em;
+              line-height: 25px;
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+
+              &.active {
+                display: none;
+              }
+            }
+
+            .check {
+              display: none;
+
+              &.active {
+                display: block;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+
+      .divider {
+        width: 100%;
+        height: 0.1rem;
+        background-color: #d9dbe9;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .form-outer {
+        width: 100%;
+
+        overflow: hidden;
+
+        form {
+          display: flex;
+          width: 400%;
+
+          .page {
+            width: 25%;
+            transition: margin-left 0.3s ease-in-out;
+
+            // Second form field
+
+            .second-form {
+              width: 100%;
+              // background-color: red;
+              @include flexItem(row, space-between);
+
+              .form-item {
+                margin: 0.5rem 0;
+                background-color: $white;
+
+                width: 48%;
+
+                .form-label {
+                  position: relative;
+
+                  display: flex;
+                  padding: 1.3rem;
+                  cursor: pointer;
+                  transition: 0.3;
+
+                  border: 1px solid #eff0f7;
+
+                  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+                  border-radius: 16px;
+
+                  // Not necessary
+                  &::before {
+                    content: "";
+                    position: absolute;
+                    display: flex;
+                    width: 24px;
+                    height: 24px;
+                    background-color: $black;
+                    border-radius: 1px solid #ddd;
+                    top: 15px;
+                    left: 15px;
+                    border-radius: 50%;
+                    transition: 0.3s;
+                    display: none;
+                  }
+
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    display: flex;
+                    width: 20px;
+                    height: 20px;
+
+                    top: 18px;
+                    left: 18px;
+                    background-image: url("@/assets/images/check.svg");
+                    background-repeat: no-repeat;
+                    transition: 0.3s;
+                    opacity: 0;
+                  }
+
+                  .form-content {
+                    width: 100%;
+                    @include flexItem(row, flex-start);
+                    align-items: center;
+
+                    transition: 0.3;
+
+                    // background-color: pink;
+
+                    // .form-img {
+                    // }
+
+                    .form-name {
+                      font-size: 1.1em;
+                      color: $text-color;
+                    }
+                  }
+                }
+
+                .form-input {
+                  position: absolute;
+                  left: -9999px;
+                  opacity: 0;
+                  visibility: hidden;
+
+                  &:checked ~ .form-label {
+                    border: 2px solid $green;
+
+                    &::before {
+                      border-color: $green;
+                      background-color: $green;
+                    }
+
+                    &::after {
+                      opacity: 1;
+                    }
+                  }
+
+                  &:checked ~ .form-label {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+
+            .third-form {
+              width: 100%;
+              // background-color: red;
+              @include flexItem(row, space-between);
+
+              .form-item {
+                margin: 0.5rem 0;
+                background-color: $white;
+
+                width: 48%;
+
+                .form-label {
+                  position: relative;
+
+                  display: flex;
+                  padding: 1.2rem;
+                  cursor: pointer;
+                  transition: 0.3;
+
+                  border: 1px solid #eff0f7;
+
+                  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+                  border-radius: 16px;
+
+                  // Not necessary
+                  &::before {
+                    content: "";
+                    position: absolute;
+                    display: flex;
+                    width: 24px;
+                    height: 24px;
+                    background-color: $white;
+
+                    top: 2.7rem;
+                    left: 2rem;
+                    border-radius: 50%;
+                    transition: 0.3s;
+                    border: 1.2px solid #d9dbe9;
+                    box-shadow: inset 0px -3px 7px rgba(20, 20, 43, 0.08);
+                  }
+
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    display: flex;
+                    width: 20px;
+                    height: 20px;
+
+                    top: 3.08rem;
+                    left: 2.401rem;
+                    background-image: url("@/assets/images/eclipse.svg");
+                    background-repeat: no-repeat;
+                    transition: 0.3s;
+                    opacity: 0;
+                  }
+
+                  .form-content {
+                    width: 100%;
+                    @include flexItem(row, flex-start);
+                    align-items: center;
+
+                    transition: 0.3;
+
+                    padding: 1.4rem 0;
+
+                    // .form-img {
+                    // }
+
+                    .form-name {
+                      font-size: 1.1em;
+                      color: $text-color;
+                    }
+                  }
+                }
+
+                .form-input {
+                  position: absolute;
+                  left: -9999px;
+                  opacity: 0;
+                  visibility: hidden;
+
+                  &:checked ~ .form-label {
+                    border: 2px solid $green;
+
+                    &::before {
+                      border-color: $green;
+                      background-color: $green;
+                    }
+
+                    &::after {
+                      opacity: 1;
+                    }
+                  }
+
+                  &:checked ~ .form-label {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+
+            .title {
+              font-size: 1.5em;
+              font-weight: bold;
+            }
+
+            .subtitle {
+              color: $text-color;
+              font-size: 1.1em;
+            }
+
+            .form-field-row {
+              @include flexItem(row, space-between);
+              padding-top: 0rem;
+
+              .form-field {
+                width: 48%;
+                // background-color: red;
+
+                @include flexItem(column, space-between);
+
+                .person {
+                  background: url("@/assets/images/person.svg");
+                  background-position: right;
+
+                  background-repeat: no-repeat;
+                }
+
+                .email {
+                  width: 100%;
+                  background: transparent url("@/assets/images/email.svg");
+                  background-position: right;
+
+                  background-repeat: no-repeat;
+                }
+
+                .phone {
+                  width: 100%;
+                  background: transparent url("@/assets/images/phone.svg");
+                  background-position: right;
+
+                  background-repeat: no-repeat;
+                }
+
+                .company {
+                  width: 100%;
+                  background: transparent url("@/assets/images/company.svg");
+                  background-position: right;
+
+                  background-repeat: no-repeat;
+                }
+
+                input {
+                  width: 100%;
+                  background: #ffffff;
+
+                  border: 1px solid #eff0f7;
+
+                  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+                  border-radius: 46px;
+                  padding: 1rem 1.3rem;
+                  position: relative;
+                }
+
+                // input.person {
+                //   text-align: end;
+                //   width: 100%;
+
+                //   background: transparent url("@/assets/images/person.svg")
+                //     no-repeat 13px center;
+                // }
+              }
+            }
+
+            .first-page-next {
+              @include flexItem(row, flex-end);
+
+              .next-step {
+                margin-top: 1.2rem;
+
+                padding: 1rem 1.2rem;
+                border-radius: 2rem;
+                cursor: pointer;
+                font-size: 0.89em;
+              }
+            }
+
+            .second-page-next,
+            .last-page-next {
+              @include flexItem(row, space-between);
+
+              .next-step {
+                margin-top: 1.2rem;
+
+                padding: 1rem 1.2rem;
+                border-radius: 2rem;
+                cursor: pointer;
+                font-size: 0.89em;
+              }
+
+              .prev-step {
+                margin-top: 1.2rem;
+
+                padding: 1rem 1.2rem;
+                border-radius: 2rem;
+                cursor: pointer;
+                font-size: 0.89em;
+              }
+            }
+
+            .submit-quote {
+              color: $heading-color;
+              margin-top: 2rem;
+              font-weight: bold;
+            }
+
+            .submit-review {
+              width: 98%;
+              margin: 0 auto 3.8rem auto;
+              color: #6f6c90;
+              font-size: 1.1em;
+            }
+          }
+        }
+      }
     }
   }
 }

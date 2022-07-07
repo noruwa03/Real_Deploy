@@ -5,7 +5,12 @@
     <header>
       <div class="container">
         <div class="text-center">
-          <h1>Building The Next <span>Unicorn</span> With You</h1>
+          <h1>
+            Building The Next
+           <span>Unicorn</span>
+            With You
+          </h1>
+          
           <p>
             Your trusted partner in building sustainable products for the
             future. Be it blockchain developement, AI, web apps, UI/UX design or
@@ -13,9 +18,7 @@
           </p>
 
           <div class="mt-5">
-            <span class="anchor-link" @click="goto">
-              Get a free quote
-            </span>
+            <span class="anchor-link" @click="goto"> Get a free quote </span>
           </div>
         </div>
       </div>
@@ -36,7 +39,7 @@
           "
         >
           <div class="col-lg-4 col-sm-6 col-12">
-            <div class="service-card bg-white my-2">
+            <div class="service-card my-2">
               <div class="text-center">
                 <img src="@/assets/images/web-app.svg" alt="" />
                 <h3>Web Application</h3>
@@ -149,11 +152,7 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <div class="about-card my-2">
               <div class="text-center">
-                <img
-                  src="@/assets/images/cross-dev-comp.svg"
-                  class="my-4"
-                  alt=""
-                />
+                <img src="@/assets/images/cross-device-comp.svg" alt="" />
                 <h3>Cross Device Compatibility</h3>
                 <p class="pb-3">
                   We implement projects end-to-end or augment your existing team
@@ -166,7 +165,7 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <div class="about-card my-2">
               <div class="text-center">
-                <img src="@/assets/images/clock.svg" alt="" />
+                <img src="@/assets/images/tailor-made-dev.svg" alt="" />
                 <h3>Tailor Made Development</h3>
                 <p class="pb-1">
                   We develop products from the idea stage using scalable and
@@ -279,21 +278,20 @@
       </div>
     </div> -->
     <!-- End of Valuable Insight -->
-    
+
     <!-- Contact Us -->
-    <div id="contact-us" class="contact-us"   >
-     
+    <div id="contact-us" class="contact-us">
       <div class="container-lg">
-        <h1 class="pb-4">Got a project or partnership in mind?</h1>
+        <h1 class="pb-4 text-center">Have a project! Let’s discuss</h1>
         <!-- <p>
           Need an experienced and skilled hand with custom IT projects?
           <span>Fill out the form to get a free consultation.</span>
         </p> -->
 
-        <div class="row-item" >
+        <div class="row-item">
           <div class="contact-form">
             <div class="wrapper">
-              <form >
+              <form>
                 <div class="first-row">
                   <div class="input-data">
                     <input type="text" name="" id="" required />
@@ -308,7 +306,7 @@
                     <label for="">Nature of business</label>
                   </div>
                 </div>
-                <div class="form-row">
+                <!-- <div class="form-row">
                   <div class="address">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
@@ -319,7 +317,7 @@
                     <div class="underline"></div>
                     <label for="">Post code</label>
                   </div>
-                </div>
+                </div> -->
                 <div class="first-row">
                   <div class="input-data">
                     <input type="text" name="" id="" required />
@@ -327,28 +325,22 @@
                     <label for="">Contact name</label>
                   </div>
                 </div>
-                <div class="first-row" >
+                <div class="first-row">
                   <div class="input-data">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
                     <label for="">Contact phone</label>
                   </div>
                 </div>
-                <div class="first-row" >
+                <div class="first-row">
                   <div class="input-data">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
-                    <label for="">Email</label>
+                    <label for="">email@gmail</label>
                   </div>
                 </div>
-                <div class="first-row" id="contact">
-                  <div class="input-data">
-                    <input type="text" name="" id="" required />
-                    <div class="underline"></div>
-                    <label for="">LinkedIn</label>
-                  </div>
-                </div>
-                <div class="first-row"  >
+
+                <div class="first-row">
                   <div class="input-data">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
@@ -384,23 +376,26 @@
             <div>
               United States <span> 30 N Gould St R, Sheridan, WY 82801 </span>
             </div>
-            <div>Nigeria <span> 17 Ozo Ocheoha Street Independence Layout Enugu </span></div>
-
             <div>
-              Tanzania <span> 1 Morogoro Road, Dar Es Salaam </span>
+              Nigeria
+              <span> 17 Ozo Ocheoha Street Independence Layout Enugu </span>
             </div>
+
+            <div>Tanzania <span> 1 Morogoro Road, Dar Es Salaam </span></div>
 
             <h4 class="mt-5">For Quick Inquiries</h4>
             <div>
-              <img src="@/assets/images/information.svg" class="email-info me-1" alt="" />
+              <img
+                src="@/assets/images/information.svg"
+                class="email-info me-1"
+                alt=""
+              />
               contact@ecolabz.io
             </div>
-           
           </div>
         </div>
       </div>
     </div>
-    
 
     <!-- End of Contact Us -->
     <Footer />
@@ -408,17 +403,13 @@
 </template>
 
 <script>
-
-
 export default {
   setup() {
-    
     const goto = () => {
       const el = document.querySelector("#contact");
       el.scrollIntoView(false);
-      
     };
-    
+
     return {
       goto,
     };

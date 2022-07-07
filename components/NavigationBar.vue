@@ -18,9 +18,8 @@
     <nav>
       <div class="nav-item-container">
         <!-- Logo -->
-        <a class="navbar-brand logo-image" href="">
-          <img src="@/assets/images/logo.svg" alt="logo" />
-        </a>
+       
+        <nuxt-link class="navbar-brand logo-image" to="/"><img src="@/assets/images/logo.svg" alt="logo" /></nuxt-link>
         <!-- End of Logo -->
 
         <ul class="nav-item-list">
@@ -29,7 +28,10 @@
           <li @click="removeSidebar"  class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="">Jobs</a></li>
-          <li @click="removeSidebar" class="nav-item"><a class="nav-link" href="#contact-us" >Contact</a></li>
+          <li @click="removeSidebar" class="nav-item">
+          <nuxt-link class="nav-link" to="/contact">Contact</nuxt-link>
+         
+          </li>
         </ul>
 
         <div class="get-free-quote">
