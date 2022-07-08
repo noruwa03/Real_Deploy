@@ -68,6 +68,10 @@ Table Of Contents:
   display: none;
 }
 
+.menu-card {
+  display: none;
+}
+
 nav {
   padding: 2rem 0;
   box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
@@ -189,7 +193,6 @@ header {
       p {
         font-size: 1.4em;
         color: $text-color;
-        
       }
     }
   }
@@ -303,8 +306,6 @@ header {
   }
 }
 
-
-
 /**********************/
 /*     Contact Us     */
 /**********************/
@@ -334,7 +335,6 @@ header {
 
       .wrapper {
         width: 100%;
-
 
         .first-row {
           @include flexItem(row, space-between);
@@ -510,7 +510,6 @@ header {
     .address {
       h4 {
         font-weight: bold;
-       
       }
       div {
         margin-top: 2rem;
@@ -620,7 +619,6 @@ footer {
     p {
       width: 86%;
       margin: 0 auto;
-     
     }
   }
 }
@@ -657,11 +655,9 @@ footer {
     .progress-bar {
       @include flexItem(row, space-between);
 
- 
-
       .step {
         text-align: center;
-   
+
         position: relative;
 
         .check {
@@ -686,7 +682,7 @@ footer {
           width: 2.4rem;
 
           border-radius: 50%;
-  
+
           background-color: #eff0f7;
 
           @include flexItem(row, center);
@@ -770,11 +766,6 @@ footer {
           width: 25%;
           transition: margin-left 0.3s ease-in-out;
 
-          
-
-         
-
-          
           .title {
             font-size: 1.6em;
             font-weight: bolder;
@@ -782,7 +773,7 @@ footer {
           }
 
           .subtitle {
-            color: #6F6C90;
+            color: #6f6c90;
             font-size: 1.25em;
           }
 
@@ -806,7 +797,7 @@ footer {
               .email {
                 width: 100%;
                 background: url("@/assets/images/email.svg");
-                background-position: right 18px top 20px;
+                background-position: right 15px top 20px;
 
                 background-repeat: no-repeat;
               }
@@ -814,7 +805,7 @@ footer {
               .phone {
                 width: 100%;
                 background: url("@/assets/images/phone.svg");
-               background-position: right 18px top 15px;
+                background-position: right 18px top 15px;
 
                 background-repeat: no-repeat;
               }
@@ -822,7 +813,7 @@ footer {
               .company {
                 width: 100%;
                 background: url("@/assets/images/company.svg");
-               background-position: right 18px top 10px;
+                background-position: right 18px top 10px;
 
                 background-repeat: no-repeat;
               }
@@ -841,12 +832,10 @@ footer {
                 border-radius: 46px;
                 padding: 1rem 2.2rem 1rem 1rem;
               }
-
-             
             }
           }
 
-           .second-form {
+          .second-form {
             width: 100%;
 
             @include flexItem(row, space-between);
@@ -865,11 +854,8 @@ footer {
                 cursor: pointer;
                 transition: 0.3;
 
-
-
                 box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
                 border-radius: 16px;
-
 
                 &::before {
                   content: "";
@@ -908,7 +894,6 @@ footer {
 
                   transition: 0.3;
 
-             
                   // .form-img {
                   // }
 
@@ -944,7 +929,6 @@ footer {
               }
             }
           }
-
 
           .third-form {
             width: 100%;
@@ -1046,7 +1030,6 @@ footer {
             }
           }
 
-
           .first-page-next {
             @include flexItem(row, flex-end);
 
@@ -1099,7 +1082,6 @@ footer {
             margin: 0 auto 3.8rem auto;
             color: #6f6c90;
             font-size: 1.3em;
-        
           }
         }
       }

@@ -4,13 +4,13 @@
       width: 60%;
 
       h1 {
-        font-size: 3em;
+        font-size: 2.9em;
         font-weight: bolder;
       }
 
       p {
         margin-top: 1.2rem;
-        font-size: 1.4em;
+        font-size: 1.3em;
       }
 
       .anchor-link {
@@ -24,27 +24,25 @@
     padding: 4rem 0;
 
     h2 {
-      font-size: 2.5em;
-      font-weight: bolder;
-      color: $heading-color;
-      font-family: $workSans;
+      font-size: 2em;
+      
     }
 
     .container-lg {
       .service-card {
         padding: 2rem;
 
-        height: 25rem;
+        height: 24rem;
 
         border-radius: 0.6rem;
         margin: 0.9rem 0;
 
         h3 {
-          font-size: 1.5em;
+          font-size: 1.4em;
         }
 
         p {
-          font-size: 1.4em;
+          font-size: 1.2em;
         }
       }
     }
@@ -54,17 +52,15 @@
     padding: 5rem 0;
 
     h2 {
-      font-size: 2.5em;
-      font-weight: bolder;
-      color: $heading-color;
-      font-family: $workSans;
+      font-size: 2em;
+      
     }
 
     &-desc {
       width: 50%;
       margin: 1rem auto;
-      font-size: 1.5em;
-      color: $text-color;
+      font-size: 1.3em;
+     
     }
 
     .container-lg {
@@ -73,31 +69,44 @@
 
         border-radius: 0.6rem;
         margin: 0.9rem 0;
-        height: 25rem;
+        height: 23rem;
 
         h3 {
-          font-size: 1.5em;
+          font-size: 1.4em;
         }
 
         p {
-          font-size: 1.4em;
+          font-size: 1.2em;
         }
       }
     }
   }
 
+  .latest-news {
+    padding: 5rem 0;
+
+    h1 {
+      font-size: 2em;
+     
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: 1.3em;
+    }
+  }
+
   .our-approach {
     padding: 5rem 0;
-    background-color: $gray;
+   
 
     .heading {
       width: 50%;
       margin: 0 auto;
       h4 {
-        font-size: 2.6em;
-        font-weight: bolder;
-        color: $heading-color;
-        font-family: $workSans;
+        font-size: 2em;
+       
       }
     }
 
@@ -105,22 +114,22 @@
       padding: 2rem;
 
       border-radius: 0.6rem;
-      height: 29rem;
+      height: 24rem;
 
       h5 {
-        font-size: 1.55em;
+        font-size: 1.4em;
       }
 
       p {
-        font-size: 1.4em;
+        font-size: 1.2em;
       }
     }
   }
 
   .contact-us {
     h1 {
-      font-size: 2.7em;
-      font-weight: bolder;
+      font-size: 2em;
+      
     }
   }
 
@@ -150,19 +159,19 @@
   }
 
   .contact-page {
-    padding: 5rem 0;
+    padding: 6rem 0;
 
     h1 {
       font-weight: bolder;
     }
 
     .box {
-      width: 96%;
+      width: 80%;
       margin: 0 auto;
       p {
         color: #6f6c90;
 
-        font-size: 1.2em;
+        font-size: 1.23em;
       }
     }
 
@@ -289,6 +298,16 @@
           .page {
             width: 25%;
             transition: margin-left 0.3s ease-in-out;
+
+             .title {
+              font-size: 1.4em;
+             
+            }
+
+            .subtitle {
+             
+              font-size: 1.1em;
+            }
 
             .form-field-row {
               @include flexItem(row, space-between);
@@ -536,11 +555,13 @@
 
             .submit-quote {
               margin-top: 2rem;
+              font-size: 1.4em;
             }
 
             .submit-review {
-              width: 98%;
+              width: 68%;
               margin: 0 auto 3.8rem auto;
+              font-size: 1.15em;
             }
           }
         }

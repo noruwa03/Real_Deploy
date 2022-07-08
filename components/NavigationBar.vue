@@ -1,5 +1,9 @@
 <template>
   <div>
+
+    <div class="menu-card">
+      
+    </div>
  
     <nuxt-link class="logo-image"  to="/"> <img src="@/assets/images/logo.svg" alt="logo" /></nuxt-link>
 

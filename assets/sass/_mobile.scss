@@ -1,4 +1,14 @@
 @media screen and(max-width: 480px) {
+  .logo-image {
+   
+    top: 2.2%;
+    left: 3%;
+
+    img {
+      width: 8rem;
+    }
+  }
+
   header {
     margin-top: 4rem;
     padding: 3rem 0;
@@ -7,17 +17,17 @@
       width: 96%;
 
       h1 {
-        font-size: 2em;
+        font-size: 1.5em;
       }
 
       p {
         margin-top: 1.2rem;
-        font-size: 1.3em;
+        font-size: 1.1em;
       }
 
       .anchor-link {
         padding: 0.8rem 1rem;
-        font-size: 1em;
+        font-size: 0.96em;
       }
     }
   }
@@ -26,9 +36,23 @@
     padding: 3rem 0;
 
     h2 {
-      font-size: 1.7em;
+      font-size: 1.5em;
       font-weight: bolder;
       padding: 0 0.5rem;
+    }
+
+    .container-lg {
+      .service-card {
+        height: 18rem;
+
+        h3 {
+          font-size: 1.3em;
+        }
+
+        p {
+          font-size: 1.1em;
+        }
+      }
     }
   }
 
@@ -36,13 +60,27 @@
     padding: 3rem 0;
 
     h2 {
-      font-size: 1.7em;
+      font-size: 1.5em;
     }
 
     &-desc {
       width: 93%;
 
-      font-size: 1.3em;
+      font-size: 1.1em;
+    }
+
+    .container-lg {
+      .about-card {
+        height: 18rem;
+
+        h3 {
+          font-size: 1.3em;
+        }
+
+        p {
+          font-size: 1.1em;
+        }
+      }
     }
   }
 
@@ -50,18 +88,17 @@
     padding: 3rem 0;
 
     h1 {
-      font-size: 1.7em;
+      font-size: 1.5em;
 
       width: 100%;
     }
 
     p {
-      font-size: 1.3em;
+      font-size: 1.1em;
       padding: 0 0.6rem;
     }
   }
 
-  
   .our-approach {
     padding: 3rem 0;
 
@@ -69,34 +106,29 @@
       width: 90%;
       margin: 0 auto;
       h4 {
-        font-size: 1.7em;
+        font-size: 1.5em;
         font-weight: bolder;
       }
     }
 
     .approach-card {
-      padding: 2rem;
-
-      box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
-      border-radius: 0.6rem;
+      height: 18rem;
 
       h5 {
-        font-size: 1.5em;
-        font-weight: bold;
+        font-size: 1.3em;
       }
 
       p {
-        font-size: 1.3em;
+        font-size: 1.1em;
       }
     }
   }
-
 
   .contact-us {
     padding: 3rem 0;
     h1 {
       width: 100%;
-      font-size: 1.7em;
+      font-size: 1.5em;
     }
 
     p {
@@ -108,28 +140,65 @@
     }
 
     .row-item {
-      @include flexItem(row, space-between);
-
       .contact-form {
-        width: 100%;
+        .wrapper {
+          .first-row {
+            .input-data {
+              input {
+                font-size: 1em;
+              }
 
-        .nda {
-          font-size: 0.89em;
-          transform: translateY(-1rem);
+              label {
+                font-size: 1em;
+              }
+            }
+          }
+
+          .form-row {
+            .address {
+              input {
+                font-size: 1em;
+              }
+            }
+
+            .post-code {
+              input {
+                font-size: 1em;
+              }
+            }
+          }
+
+          .nda {
+            font-size: 1em;
+          }
+
+          .file-box {
+            span {
+              font-size: 1em;
+            }
+          }
+
+          .upload-instruction {
+            font-size: 1em;
+          }
         }
       }
 
       .address {
-        margin-top: 3rem;
-        h4 {
-          font-weight: bold;
-        }
         div {
-          margin-top: 2rem;
-          font-size: 1.2em;
+          font-size: 1.08em;
+
           span {
             display: block;
           }
+        }
+
+        .email-info {
+          width: 1.3rem;
+        }
+
+        .contact-email {
+          font-size: 1.1em;
         }
       }
     }
@@ -138,25 +207,18 @@
   footer {
     padding-top: 3rem;
     .brand-name {
-      font-size: 2.4em;
-      color: $white;
-
-      font-weight: bold;
+      font-size: 2.2em;
     }
 
     .about {
-      color: $white;
+      font-size: 1em;
     }
 
     .footer-anchor-link {
       a {
         display: block;
-        color: $white;
+
         font-size: 0.95em;
-        margin: 1rem 0;
-        &:hover {
-          color: $white;
-        }
       }
     }
 
@@ -164,17 +226,16 @@
       width: 100%;
       margin-top: 1.5rem;
       padding: 1rem 0;
-     
+
       p {
         width: 95%;
         margin: 0 auto;
-       
       }
     }
   }
 
   .contact-page {
-    padding: 5rem 0;
+    padding: 6rem 0;
 
     h1 {
       font-weight: bolder;
@@ -186,7 +247,7 @@
       p {
         color: #6f6c90;
 
-        font-size: 1.25em;
+        font-size: 1.1em;
       }
     }
 
@@ -194,9 +255,6 @@
       width: 96%;
       margin: 1.4rem auto;
       padding: 2rem 1rem;
-    
-
-     
 
       border-radius: 1.3rem;
 
@@ -205,7 +263,7 @@
 
         .step {
           text-align: center;
-         
+
           position: relative;
 
           .check {
@@ -232,7 +290,6 @@
             @include flexItem(row, center);
             align-items: center;
             transition: 0.2;
-
 
             &::before,
             &::after {
@@ -304,13 +361,11 @@
             transition: margin-left 0.3s ease-in-out;
 
             .title {
-              font-size: 1.5em;
-              
+              font-size: 1.4em;
             }
 
             .subtitle {
-             
-              font-size: 1.18em;
+              font-size: 1.1em;
             }
 
             .form-field-row {
@@ -331,7 +386,6 @@
 
               .form-item {
                 margin: 0.5rem 0;
-              
 
                 width: 100%;
 
@@ -343,8 +397,6 @@
                   cursor: pointer;
                   transition: 0.3;
 
-                 
-
                   border-radius: 16px;
 
                   &::before {
@@ -353,7 +405,7 @@
                     display: flex;
                     width: 24px;
                     height: 24px;
-                 
+
                     top: 15px;
                     left: 15px;
                     border-radius: 50%;
@@ -388,7 +440,6 @@
 
                     .form-name {
                       font-size: 1.1em;
-                     
                     }
                   }
                 }
@@ -426,7 +477,6 @@
 
               .form-item {
                 margin: 0.5rem 0;
-            
 
                 width: 100%;
 
@@ -438,7 +488,6 @@
                   cursor: pointer;
                   transition: 0.3;
 
-                 
                   border-radius: 16px;
 
                   &::before {
@@ -453,7 +502,6 @@
                     left: 2rem;
                     border-radius: 50%;
                     transition: 0.3s;
-                   
                   }
 
                   &::after {
@@ -485,7 +533,6 @@
 
                     .form-name {
                       font-size: 1.1em;
-                     
                     }
                   }
                 }
@@ -553,17 +600,15 @@
             }
 
             .submit-quote {
-             
               margin-top: 2rem;
-              font-size: 1.6em;
-          
+              font-size: 1.4em;
             }
 
             .submit-review {
               width: 96%;
               margin: 0 auto 3.8rem auto;
               color: #6f6c90;
-              font-size: 1.3em;
+              font-size: 1.1em;
             }
           }
         }

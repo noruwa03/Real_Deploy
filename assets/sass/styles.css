@@ -81,6 +81,10 @@ Table Of Contents:
   display: none;
 }
 
+.menu-card {
+  display: none;
+}
+
 nav {
   padding: 2rem 0;
   -webkit-box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
@@ -882,7 +886,7 @@ footer .all-rights-reserved p {
 }
 
 .contact-page .contact-card .form-outer form .page .subtitle {
-  color: #6F6C90;
+  color: #6f6c90;
   font-size: 1.25em;
 }
 
@@ -933,7 +937,7 @@ footer .all-rights-reserved p {
 .contact-page .contact-card .form-outer form .page .form-field-row .form-field .email {
   width: 100%;
   background: url("@/assets/images/email.svg");
-  background-position: right 18px top 20px;
+  background-position: right 15px top 20px;
   background-repeat: no-repeat;
 }
 
@@ -1311,12 +1315,12 @@ footer .all-rights-reserved p {
     width: 60%;
   }
   header .container h1 {
-    font-size: 3em;
+    font-size: 2.9em;
     font-weight: bolder;
   }
   header .container p {
     margin-top: 1.2rem;
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   header .container .anchor-link {
     padding: 0.8rem 1rem;
@@ -1326,78 +1330,77 @@ footer .all-rights-reserved p {
     padding: 4rem 0;
   }
   .services h2 {
-    font-size: 2.5em;
-    font-weight: bolder;
-    color: #0A0A0A;
-    font-family: "WorkSans";
+    font-size: 2em;
   }
   .services .container-lg .service-card {
     padding: 2rem;
-    height: 25rem;
+    height: 24rem;
     border-radius: 0.6rem;
     margin: 0.9rem 0;
   }
   .services .container-lg .service-card h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .services .container-lg .service-card p {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   .about-us {
     padding: 5rem 0;
   }
   .about-us h2 {
-    font-size: 2.5em;
-    font-weight: bolder;
-    color: #0A0A0A;
-    font-family: "WorkSans";
+    font-size: 2em;
   }
   .about-us-desc {
     width: 50%;
     margin: 1rem auto;
-    font-size: 1.5em;
-    color: #4F5163;
+    font-size: 1.3em;
   }
   .about-us .container-lg .about-card {
     padding: 2rem 1rem;
     border-radius: 0.6rem;
     margin: 0.9rem 0;
-    height: 25rem;
+    height: 23rem;
   }
   .about-us .container-lg .about-card h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .about-us .container-lg .about-card p {
-    font-size: 1.4em;
+    font-size: 1.2em;
+  }
+  .latest-news {
+    padding: 5rem 0;
+  }
+  .latest-news h1 {
+    font-size: 2em;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .latest-news p {
+    font-size: 1.3em;
   }
   .our-approach {
     padding: 5rem 0;
-    background-color: #FAFAFB;
   }
   .our-approach .heading {
     width: 50%;
     margin: 0 auto;
   }
   .our-approach .heading h4 {
-    font-size: 2.6em;
-    font-weight: bolder;
-    color: #0A0A0A;
-    font-family: "WorkSans";
+    font-size: 2em;
   }
   .our-approach .approach-card {
     padding: 2rem;
     border-radius: 0.6rem;
-    height: 29rem;
+    height: 24rem;
   }
   .our-approach .approach-card h5 {
-    font-size: 1.55em;
-  }
-  .our-approach .approach-card p {
     font-size: 1.4em;
   }
+  .our-approach .approach-card p {
+    font-size: 1.2em;
+  }
   .contact-us h1 {
-    font-size: 2.7em;
-    font-weight: bolder;
+    font-size: 2em;
   }
   footer .brand-name {
     font-size: 2.4em;
@@ -1416,18 +1419,18 @@ footer .all-rights-reserved p {
     margin: 0 auto;
   }
   .contact-page {
-    padding: 5rem 0;
+    padding: 6rem 0;
   }
   .contact-page h1 {
     font-weight: bolder;
   }
   .contact-page .box {
-    width: 96%;
+    width: 80%;
     margin: 0 auto;
   }
   .contact-page .box p {
     color: #6f6c90;
-    font-size: 1.2em;
+    font-size: 1.23em;
   }
   .contact-page .contact-card {
     width: 90%;
@@ -1574,6 +1577,12 @@ footer .all-rights-reserved p {
     width: 25%;
     -webkit-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
+  }
+  .contact-page .contact-card .form-outer form .page .title {
+    font-size: 1.4em;
+  }
+  .contact-page .contact-card .form-outer form .page .subtitle {
+    font-size: 1.1em;
   }
   .contact-page .contact-card .form-outer form .page .form-field-row {
     display: -webkit-box;
@@ -1905,22 +1914,37 @@ footer .all-rights-reserved p {
   }
   .contact-page .contact-card .form-outer form .page .submit-quote {
     margin-top: 2rem;
+    font-size: 1.4em;
   }
   .contact-page .contact-card .form-outer form .page .submit-review {
-    width: 98%;
+    width: 68%;
     margin: 0 auto 3.8rem auto;
+    font-size: 1.15em;
   }
 }
 
 @media screen and (max-width: 992px) {
   .logo-image {
     display: block;
-    position: absolute;
-    top: 2.2%;
+    position: fixed;
+    top: 1.36%;
     left: 3%;
+    z-index: 55;
   }
   .logo-image img {
     width: 8rem;
+  }
+  .menu-card {
+    display: block;
+    padding: 2.4rem 0;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
+            box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
+    background-color: #fff;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 40;
   }
   #menu-btn {
     position: fixed;
@@ -2069,23 +2093,30 @@ footer .all-rights-reserved p {
     width: 70%;
   }
   header .container h1 {
-    font-size: 2.6em;
-    font-weight: bolder;
+    font-size: 2.5em;
   }
   header .container p {
     margin-top: 1.2rem;
-    font-size: 1.5em;
+    font-size: 1.27em;
   }
   header .container .anchor-link {
     padding: 0.8rem 1rem;
     font-size: 1em;
   }
   .services {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
   .services h2 {
-    font-size: 2em;
-    font-weight: bolder;
+    font-size: 1.7em;
+  }
+  .services .container-lg .service-card {
+    height: 18rem;
+  }
+  .services .container-lg .service-card h3 {
+    font-size: 1.3em;
+  }
+  .services .container-lg .service-card p {
+    font-size: 1.1em;
   }
   .about-us {
     padding: 5rem 0;
@@ -2095,19 +2126,27 @@ footer .all-rights-reserved p {
   }
   .about-us-desc {
     width: 90%;
-    font-size: 1.4em;
+    font-size: 1.1em;
+  }
+  .about-us .container-lg .about-card {
+    height: 18rem;
+  }
+  .about-us .container-lg .about-card h3 {
+    font-size: 1.3em;
+  }
+  .about-us .container-lg .about-card p {
+    font-size: 1.1em;
   }
   .latest-news {
     padding: 5rem 0;
   }
   .latest-news h1 {
-    font-size: 2.2em;
-    font-weight: bolder;
+    font-size: 1.5em;
     width: 70%;
     margin: 0 auto;
   }
   .latest-news p {
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
   .our-approach {
     padding: 5rem 0;
@@ -2122,19 +2161,61 @@ footer .all-rights-reserved p {
   }
   .our-approach .approach-card {
     padding: 2rem;
-    -webkit-box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
-            box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
-    border-radius: 0.6rem;
+    height: 18rem;
   }
   .our-approach .approach-card h5 {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.3em;
   }
   .our-approach .approach-card p {
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
   .contact-us h1 {
-    font-size: 2.6em;
+    font-size: 1.5em;
+  }
+  .contact-us .row-item .contact-form {
+    width: 48%;
+  }
+  .contact-us .row-item .contact-form .wrapper .first-row .input-data input {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .first-row .input-data label {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .form-row .address input {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .form-row .post-code input {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .nda {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .file-box span {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .upload-instruction {
+    font-size: 1em;
+  }
+  .contact-us .row-item .address {
+    margin-top: 3rem;
+  }
+  .contact-us .row-item .address div {
+    font-size: 1.08em;
+  }
+  .contact-us .row-item .address div span {
+    display: block;
+  }
+  .contact-us .row-item .address .email-info {
+    width: 1.3rem;
+  }
+  .contact-us .row-item .address .contact-email {
+    font-size: 1.1em;
+  }
+  footer .brand-name {
+    font-size: 2.3em;
+  }
+  footer .about {
+    font-size: 1em;
   }
   footer .footer-anchor-link a {
     display: block;
@@ -2150,26 +2231,22 @@ footer .all-rights-reserved p {
     margin: 0 auto;
   }
   .contact-page {
-    padding: 5rem 0;
+    padding: 6rem 0;
   }
   .contact-page h1 {
     font-weight: bolder;
   }
   .contact-page .box {
-    width: 96%;
+    width: 80%;
     margin: 0 auto;
   }
   .contact-page .box p {
-    color: #6f6c90;
-    font-size: 1.2em;
+    font-size: 1.15em;
   }
   .contact-page .contact-card {
     width: 90%;
     margin: 1.4rem auto;
     padding: 2rem 1rem;
-    background: #fff;
-    -webkit-box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
-            box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
     border-radius: 1.3rem;
   }
   .contact-page .contact-card .progress-bar {
@@ -2309,6 +2386,12 @@ footer .all-rights-reserved p {
     -webkit-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
   }
+  .contact-page .contact-card .form-outer form .page .title {
+    font-size: 1.4em;
+  }
+  .contact-page .contact-card .form-outer form .page .subtitle {
+    font-size: 1.1em;
+  }
   .contact-page .contact-card .form-outer form .page .form-field-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2640,25 +2723,35 @@ footer .all-rights-reserved p {
   .contact-page .contact-card .form-outer form .page .submit-quote {
     color: #0A0A0A;
     margin-top: 2rem;
+    font-size: 1.4em;
   }
   .contact-page .contact-card .form-outer form .page .submit-review {
-    width: 98%;
+    width: 70%;
     margin: 0 auto 3.8rem auto;
     color: #6f6c90;
+    font-size: 1.1em;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .logo-image {
+    display: block;
+    position: fixed;
+    top: 4.1%;
+    left: 3%;
+  }
+  .logo-image img {
+    width: 8rem;
+  }
   header .container {
     width: 96%;
   }
   header .container h1 {
-    font-size: 3em;
-    font-weight: bolder;
+    font-size: 2.2em;
   }
   header .container p {
     margin-top: 1.2rem;
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   header .container .anchor-link {
     padding: 0.8rem 1rem;
@@ -2667,17 +2760,46 @@ footer .all-rights-reserved p {
     padding: 4rem 0;
   }
   .services h2 {
-    font-size: 2em;
+    font-size: 1.5em;
+  }
+  .services .container-lg .service-card {
+    height: 20rem;
+  }
+  .services .container-lg .service-card h3 {
+    font-size: 1.3em;
+  }
+  .services .container-lg .service-card p {
+    font-size: 1.1em;
   }
   .about-us {
     padding: 4rem 0;
   }
   .about-us h2 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .about-us-desc {
     width: 93%;
-    font-size: 1.4em;
+    font-size: 1.1em;
+  }
+  .about-us .container-lg .about-card {
+    height: 20rem;
+  }
+  .about-us .container-lg .about-card h3 {
+    font-size: 1.3em;
+  }
+  .about-us .container-lg .about-card p {
+    font-size: 1.1em;
+  }
+  .latest-news {
+    padding: 5rem 0;
+  }
+  .latest-news h1 {
+    font-size: 1.5em;
+    width: 100%;
+  }
+  .latest-news p {
+    font-size: 1.1em;
+    padding: 0 0.6rem;
   }
   .our-approach {
     padding: 4rem 0;
@@ -2687,78 +2809,75 @@ footer .all-rights-reserved p {
     margin: 0 auto;
   }
   .our-approach .heading h4 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .our-approach .approach-card {
     padding: 2rem;
-    -webkit-box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
-            box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
-    border-radius: 0.6rem;
+    height: 19rem;
   }
   .our-approach .approach-card h5 {
     font-size: 1.3em;
-    font-weight: bold;
   }
   .our-approach .approach-card p {
-    font-size: 1.4em;
-  }
-  .latest-news {
-    padding: 5rem 0;
-  }
-  .latest-news h1 {
-    font-size: 2em;
-    width: 100%;
-  }
-  .latest-news p {
-    font-size: 1.4em;
-    padding: 0 0.6rem;
+    font-size: 1.1em;
   }
   .contact-us {
     padding: 4rem 0;
   }
   .contact-us h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .contact-us p span {
     display: block;
   }
-  .contact-us .row-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .contact-us .row-item .contact-form {
     width: 100%;
+  }
+  .contact-us .row-item .contact-form .wrapper .first-row .input-data input {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .first-row .input-data label {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .form-row .address input {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .form-row .post-code input {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .nda {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .file-box span {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .upload-instruction {
+    font-size: 1em;
   }
   .contact-us .row-item .address {
     margin-top: 3rem;
   }
-  .contact-us .row-item .address h4 {
-    font-weight: bold;
-  }
   .contact-us .row-item .address div {
-    margin-top: 2rem;
+    font-size: 1.08em;
   }
   .contact-us .row-item .address div span {
     display: block;
   }
+  .contact-us .row-item .address .email-info {
+    width: 1.3rem;
+  }
+  .contact-us .row-item .address .contact-email {
+    font-size: 1.1em;
+  }
   footer .brand-name {
-    font-size: 2.4em;
+    font-size: 2.3em;
+  }
+  footer .about {
+    font-size: 1em;
   }
   footer .footer-anchor-link a {
     display: block;
+    font-size: 0.95em;
     margin: 1rem 0;
   }
   footer .all-rights-reserved {
@@ -2771,7 +2890,7 @@ footer .all-rights-reserved p {
     margin: 0 auto;
   }
   .contact-page {
-    padding: 5rem 0;
+    padding: 6rem 0;
   }
   .contact-page h1 {
     font-weight: bolder;
@@ -2782,7 +2901,7 @@ footer .all-rights-reserved p {
   }
   .contact-page .box p {
     color: #6f6c90;
-    font-size: 1.2em;
+    font-size: 1.14em;
   }
   .contact-page .contact-card {
     width: 96%;
@@ -2920,12 +3039,11 @@ footer .all-rights-reserved p {
     transition: margin-left 0.3s ease-in-out;
   }
   .contact-page .contact-card .form-outer form .page .title {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
   }
   .contact-page .contact-card .form-outer form .page .subtitle {
-    color: #4F5163;
-    font-size: 1.18em;
+    font-size: 1.1em;
   }
   .contact-page .contact-card .form-outer form .page .form-field-row {
     display: -webkit-box;
@@ -3256,19 +3374,25 @@ footer .all-rights-reserved p {
     font-size: 0.89em;
   }
   .contact-page .contact-card .form-outer form .page .submit-quote {
-    color: #0A0A0A;
     margin-top: 2rem;
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
   .contact-page .contact-card .form-outer form .page .submit-review {
-    width: 98%;
+    width: 90%;
     margin: 0 auto 3.8rem auto;
     color: #6f6c90;
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .logo-image {
+    top: 2.2%;
+    left: 3%;
+  }
+  .logo-image img {
+    width: 8rem;
+  }
   header {
     margin-top: 4rem;
     padding: 3rem 0;
@@ -3277,43 +3401,61 @@ footer .all-rights-reserved p {
     width: 96%;
   }
   header .container h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   header .container p {
     margin-top: 1.2rem;
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
   header .container .anchor-link {
     padding: 0.8rem 1rem;
-    font-size: 1em;
+    font-size: 0.96em;
   }
   .services {
     padding: 3rem 0;
   }
   .services h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: bolder;
     padding: 0 0.5rem;
+  }
+  .services .container-lg .service-card {
+    height: 18rem;
+  }
+  .services .container-lg .service-card h3 {
+    font-size: 1.3em;
+  }
+  .services .container-lg .service-card p {
+    font-size: 1.1em;
   }
   .about-us {
     padding: 3rem 0;
   }
   .about-us h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
   .about-us-desc {
     width: 93%;
+    font-size: 1.1em;
+  }
+  .about-us .container-lg .about-card {
+    height: 18rem;
+  }
+  .about-us .container-lg .about-card h3 {
     font-size: 1.3em;
+  }
+  .about-us .container-lg .about-card p {
+    font-size: 1.1em;
   }
   .latest-news {
     padding: 3rem 0;
   }
   .latest-news h1 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     width: 100%;
   }
   .latest-news p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 0 0.6rem;
   }
   .our-approach {
@@ -3324,28 +3466,24 @@ footer .all-rights-reserved p {
     margin: 0 auto;
   }
   .our-approach .heading h4 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: bolder;
   }
   .our-approach .approach-card {
-    padding: 2rem;
-    -webkit-box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
-            box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
-    border-radius: 0.6rem;
+    height: 18rem;
   }
   .our-approach .approach-card h5 {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.3em;
   }
   .our-approach .approach-card p {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
   .contact-us {
     padding: 3rem 0;
   }
   .contact-us h1 {
     width: 100%;
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
   .contact-us p {
     font-size: 1em;
@@ -3353,63 +3491,51 @@ footer .all-rights-reserved p {
   .contact-us p span {
     display: block;
   }
-  .contact-us .row-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .contact-us .row-item .contact-form .wrapper .first-row .input-data input {
+    font-size: 1em;
   }
-  .contact-us .row-item .contact-form {
-    width: 100%;
+  .contact-us .row-item .contact-form .wrapper .first-row .input-data label {
+    font-size: 1em;
   }
-  .contact-us .row-item .contact-form .nda {
-    font-size: 0.89em;
-    -webkit-transform: translateY(-1rem);
-            transform: translateY(-1rem);
+  .contact-us .row-item .contact-form .wrapper .form-row .address input {
+    font-size: 1em;
   }
-  .contact-us .row-item .address {
-    margin-top: 3rem;
+  .contact-us .row-item .contact-form .wrapper .form-row .post-code input {
+    font-size: 1em;
   }
-  .contact-us .row-item .address h4 {
-    font-weight: bold;
+  .contact-us .row-item .contact-form .wrapper .nda {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .file-box span {
+    font-size: 1em;
+  }
+  .contact-us .row-item .contact-form .wrapper .upload-instruction {
+    font-size: 1em;
   }
   .contact-us .row-item .address div {
-    margin-top: 2rem;
-    font-size: 1.2em;
+    font-size: 1.08em;
   }
   .contact-us .row-item .address div span {
     display: block;
+  }
+  .contact-us .row-item .address .email-info {
+    width: 1.3rem;
+  }
+  .contact-us .row-item .address .contact-email {
+    font-size: 1.1em;
   }
   footer {
     padding-top: 3rem;
   }
   footer .brand-name {
-    font-size: 2.4em;
-    color: #fff;
-    font-weight: bold;
+    font-size: 2.2em;
   }
   footer .about {
-    color: #fff;
+    font-size: 1em;
   }
   footer .footer-anchor-link a {
     display: block;
-    color: #fff;
     font-size: 0.95em;
-    margin: 1rem 0;
-  }
-  footer .footer-anchor-link a:hover {
-    color: #fff;
   }
   footer .all-rights-reserved {
     width: 100%;
@@ -3421,7 +3547,7 @@ footer .all-rights-reserved p {
     margin: 0 auto;
   }
   .contact-page {
-    padding: 5rem 0;
+    padding: 6rem 0;
   }
   .contact-page h1 {
     font-weight: bolder;
@@ -3432,7 +3558,7 @@ footer .all-rights-reserved p {
   }
   .contact-page .box p {
     color: #6f6c90;
-    font-size: 1.25em;
+    font-size: 1.1em;
   }
   .contact-page .contact-card {
     width: 96%;
@@ -3567,10 +3693,10 @@ footer .all-rights-reserved p {
     transition: margin-left 0.3s ease-in-out;
   }
   .contact-page .contact-card .form-outer form .page .title {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .contact-page .contact-card .form-outer form .page .subtitle {
-    font-size: 1.18em;
+    font-size: 1.1em;
   }
   .contact-page .contact-card .form-outer form .page .form-field-row {
     display: -webkit-box;
@@ -3887,13 +4013,13 @@ footer .all-rights-reserved p {
   }
   .contact-page .contact-card .form-outer form .page .submit-quote {
     margin-top: 2rem;
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   .contact-page .contact-card .form-outer form .page .submit-review {
     width: 96%;
     margin: 0 auto 3.8rem auto;
     color: #6f6c90;
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
