@@ -1,18 +1,16 @@
 <template>
   <div>
-    <div class="menu-card">
-      <nuxt-link class="logo-image" to="/">
-        <img src="@/assets/images/logo.svg" alt="logo"
-      /></nuxt-link>
-
-      <div id="menu-btn" @click="menuHandler">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <div class="menu-card"></div>
+    <nuxt-link class="logo-image" to="/">
+      <img src="@/assets/images/logo.svg" alt="logo"
+    /></nuxt-link>
+    <div id="menu-btn" @click="menuHandler">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
     <!-- Navigation -->
