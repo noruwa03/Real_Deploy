@@ -36,7 +36,7 @@ Table Of Contents:
   box-sizing: border-box;
   outline: none;
 
-  font-family: $dmSans;
+  font-family: $spaceGrostesk;
   list-style: none;
 
   a {
@@ -96,6 +96,7 @@ nav {
           font-size: 1.12em;
           color: $heading-color;
           cursor: pointer;
+          font-family: $workSans;
         }
       }
     }
@@ -109,6 +110,7 @@ nav {
         color: $white;
         cursor: pointer;
         border-radius: 1.5rem;
+        font-family: $workSans;
       }
     }
   }
@@ -125,46 +127,11 @@ header {
       font-size: 3.5em;
       font-weight: bolder;
       color: $heading-color;
-      // @include flexItem(row, space-around);
-      // align-items: center;
-
-      //  .dynamic-txts {
-
-      //     height: 90px;
-      //     line-height: 90px;
-      //     overflow: hidden;
-
-      //     li {
-
-      //       list-style: none;
-      //       color: $green;
-      //       font-size: 60px;
-      //       font-weight: 500;
-      //       position: relative;
-      //       top: 0;
-      //       animation: slide 12s steps(4) infinite;
-
-      //       span {
-      //         position: relative;
-      //         margin: 5px 0;
-      //         line-height: 80px;
-
-      //         &::after {
-      //           content: "";
-      //           position: absolute;
-      //           left: 0;
-      //           height: 100%;
-      //           width: 100%;
-      //           background: #fff;
-      //           border-left: 2px solid $green;
-      //           animation: typing 3s steps(10) infinite;
-      //         }
-      //       }
-      //     }
-      //   }
+      font-family: $workSans;
 
       span {
         color: $green;
+        font-family: $workSans;
       }
     }
 
@@ -181,23 +148,8 @@ header {
       color: $white;
       cursor: pointer;
       border-radius: 1.5rem;
+      font-family: $workSans;
     }
-  }
-}
-
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-
-@keyframes typing {
-  40%,
-  60% {
-    left: calc(100% + 30px);
-  }
-  100% {
-    left: 0;
   }
 }
 
@@ -212,14 +164,14 @@ header {
     font-size: 2.5em;
     font-weight: bolder;
     color: $heading-color;
+    font-family: $workSans;
   }
 
   .container-lg {
     .service-card {
       padding: 2rem;
       background: $card-bg;
-      height: 20rem;
-      /* grad */
+      height: 22.5rem;
 
       box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
 
@@ -228,14 +180,16 @@ header {
 
       h3 {
         font-size: 1.5em;
-        font-weight: bold;
-        color: $black;
+        font-weight: bolder;
+        color: $heading-color;
         margin: 1.1rem 0;
+        font-family: $workSans;
       }
 
       p {
-        font-size: 1.06em;
+        font-size: 1.4em;
         color: $text-color;
+        
       }
     }
   }
@@ -252,12 +206,13 @@ header {
     font-size: 2.5em;
     font-weight: bolder;
     color: $heading-color;
+    font-family: $workSans;
   }
 
   &-desc {
     width: 50%;
     margin: 1rem auto;
-    font-size: 1.26em;
+    font-size: 1.5em;
     color: $text-color;
   }
 
@@ -274,16 +229,37 @@ header {
 
       h3 {
         font-size: 1.5em;
-        font-weight: bold;
+        font-weight: bolder;
         color: $black;
         margin: 1.1rem 0;
+        font-family: $workSans;
       }
 
       p {
-        font-size: 1.06em;
+        font-size: 1.4em;
         color: $text-color;
       }
     }
+  }
+}
+
+/**********************/
+/*       Latest News      */
+/**********************/
+.latest-news {
+  padding: 5rem 0;
+
+  h1 {
+    font-size: 2.6em;
+    font-weight: bolder;
+
+    color: $heading-color;
+    font-family: $workSans;
+  }
+
+  p {
+    font-size: 1.5em;
+    color: $text-color;
   }
 }
 
@@ -302,6 +278,7 @@ header {
       font-size: 2.6em;
       font-weight: bolder;
       color: $heading-color;
+      font-family: $workSans;
     }
   }
 
@@ -310,38 +287,23 @@ header {
     background-color: $white;
     box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
     border-radius: 0.6rem;
-    height: 18rem;
+    height: 23rem;
 
     h5 {
       font-size: 1.55em;
       font-weight: bold;
       color: $black;
+      font-family: $workSans;
     }
 
     p {
-      font-size: 1.06em;
+      font-size: 1.4em;
+      color: rgba(10, 10, 10, 0.75);
     }
   }
 }
 
-/**********************/
-/*       Latest News      */
-/**********************/
-.latest-news {
-  padding: 5rem 0;
 
-  h1 {
-    font-size: 2.6em;
-    font-weight: bolder;
-
-    color: $heading-color;
-  }
-
-  p {
-    font-size: 1.16em;
-    color: $text-color;
-  }
-}
 
 /**********************/
 /*     Contact Us     */
@@ -350,8 +312,9 @@ header {
 .contact-us {
   padding: 5rem 0;
   h1 {
-    font-size: 3em;
+    font-size: 2.8em;
     font-weight: bolder;
+    font-family: $workSans;
   }
 
   p {
@@ -372,7 +335,6 @@ header {
       .wrapper {
         width: 100%;
 
-        // @include flexItem(row, space-between);
 
         .first-row {
           @include flexItem(row, space-between);
@@ -403,6 +365,7 @@ header {
               bottom: 0.98rem;
               left: 0;
               color: $heading-color;
+              font-size: 1.1em;
             }
           }
         }
@@ -508,6 +471,12 @@ header {
           font-weight: bold;
           letter-spacing: 0.1rem;
           border-radius: 1.5rem;
+          font-family: $workSans;
+        }
+
+        .nda {
+          font-size: 1.1em;
+          color: $text-color;
         }
 
         .heading {
@@ -526,12 +495,13 @@ header {
 
           span {
             color: $text-color;
+            font-size: 1.1em;
           }
         }
 
         .upload-instruction {
           margin-top: 1rem;
-          font-size: 0.86em;
+          font-size: 1.1em;
           color: $text-color;
         }
       }
@@ -540,10 +510,12 @@ header {
     .address {
       h4 {
         font-weight: bold;
+       
       }
       div {
         margin-top: 2rem;
-        font-size: 1.07em;
+        font-size: 1.2em;
+        color: $text-color;
         span {
           display: block;
         }
@@ -551,6 +523,10 @@ header {
 
       .email-info {
         width: 1.3rem;
+      }
+
+      .contact-email {
+        font-size: 1.3em;
       }
     }
   }
@@ -607,6 +583,7 @@ footer {
 
   h5 {
     color: $white;
+    font-family: $workSans;
   }
 
   .brand-name {
@@ -614,10 +591,12 @@ footer {
     color: $white;
 
     font-weight: bold;
+    font-family: $workSans;
   }
 
   .about {
     color: $white;
+    font-size: 1.14em;
   }
 
   .footer-anchor-link {
@@ -626,6 +605,7 @@ footer {
       color: $white;
       font-size: 0.95em;
       margin: 1rem 0 0 1rem;
+      font-family: $workSans;
       &:hover {
         color: $white;
       }
@@ -640,7 +620,7 @@ footer {
     p {
       width: 86%;
       margin: 0 auto;
-      font-weight: bold;
+     
     }
   }
 }
@@ -651,6 +631,7 @@ footer {
 
   h1 {
     font-weight: bolder;
+    font-family: $workSans;
   }
 
   .box {
@@ -659,7 +640,7 @@ footer {
     p {
       color: #6f6c90;
 
-      font-size: 1.2em;
+      font-size: 1.4em;
     }
   }
 
@@ -676,11 +657,11 @@ footer {
     .progress-bar {
       @include flexItem(row, space-between);
 
-      // margin: 40px 0;
+ 
 
       .step {
         text-align: center;
-        // width: 100%;
+   
         position: relative;
 
         .check {
@@ -703,9 +684,9 @@ footer {
           position: relative;
           height: 2.4rem;
           width: 2.4rem;
-          // border: 2px solid $black;
+
           border-radius: 50%;
-          // display: inline-block;
+  
           background-color: #eff0f7;
 
           @include flexItem(row, center);
@@ -789,11 +770,85 @@ footer {
           width: 25%;
           transition: margin-left 0.3s ease-in-out;
 
-          // Second form field
+          
 
-          .second-form {
+         
+
+          
+          .title {
+            font-size: 1.6em;
+            font-weight: bolder;
+            font-family: $workSans;
+          }
+
+          .subtitle {
+            color: #6F6C90;
+            font-size: 1.25em;
+          }
+
+          .form-field-row {
+            @include flexItem(row, space-between);
+            padding-top: 1.3rem;
+
+            .form-field {
+              width: 47%;
+              // background-color: red;
+
+              @include flexItem(column, space-between);
+
+              .person {
+                background: url("@/assets/images/person.svg");
+                background-position: right 18px top 10px;
+
+                background-repeat: no-repeat;
+              }
+
+              .email {
+                width: 100%;
+                background: url("@/assets/images/email.svg");
+                background-position: right 18px top 20px;
+
+                background-repeat: no-repeat;
+              }
+
+              .phone {
+                width: 100%;
+                background: url("@/assets/images/phone.svg");
+               background-position: right 18px top 15px;
+
+                background-repeat: no-repeat;
+              }
+
+              .company {
+                width: 100%;
+                background: url("@/assets/images/company.svg");
+               background-position: right 18px top 10px;
+
+                background-repeat: no-repeat;
+              }
+
+              label {
+                font-family: $workSans;
+              }
+
+              input {
+                width: 100%;
+                background: #ffffff;
+
+                border: 1px solid #eff0f7;
+
+                box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+                border-radius: 46px;
+                padding: 1rem 2.2rem 1rem 1rem;
+              }
+
+             
+            }
+          }
+
+           .second-form {
             width: 100%;
-            // background-color: red;
+
             @include flexItem(row, space-between);
 
             .form-item {
@@ -810,12 +865,12 @@ footer {
                 cursor: pointer;
                 transition: 0.3;
 
-                // border: 1px solid #eff0f7;
+
 
                 box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
                 border-radius: 16px;
 
-                // Not necessary
+
                 &::before {
                   content: "";
                   position: absolute;
@@ -853,8 +908,7 @@ footer {
 
                   transition: 0.3;
 
-                  // background-color: pink;
-
+             
                   // .form-img {
                   // }
 
@@ -891,9 +945,10 @@ footer {
             }
           }
 
+
           .third-form {
             width: 100%;
-            // background-color: red;
+
             @include flexItem(row, space-between);
 
             .form-item {
@@ -915,7 +970,6 @@ footer {
                 box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
                 border-radius: 16px;
 
-                // Not necessary
                 &::before {
                   content: "";
                   position: absolute;
@@ -992,79 +1046,6 @@ footer {
             }
           }
 
-          .title {
-            font-size: 1.5em;
-            font-weight: bold;
-          }
-
-          .subtitle {
-            color: $text-color;
-            font-size: 1.1em;
-          }
-
-          .form-field-row {
-            @include flexItem(row, space-between);
-            padding-top: 1.3rem;
-
-            .form-field {
-              width: 47%;
-              // background-color: red;
-
-              @include flexItem(column, space-between);
-
-              .person {
-                background: url("@/assets/images/person.svg");
-                background-position: right;
-
-                background-repeat: no-repeat;
-              }
-
-              .email {
-                width: 100%;
-                background: transparent url("@/assets/images/email.svg");
-                background-position: right;
-
-                background-repeat: no-repeat;
-                
-              }
-
-              .phone {
-                width: 100%;
-                background: transparent url("@/assets/images/phone.svg");
-                background-position: right;
-
-                background-repeat: no-repeat;
-              }
-
-              .company {
-                width: 100%;
-                background: transparent url("@/assets/images/company.svg");
-                background-position: right;
-
-                background-repeat: no-repeat;
-              }
-
-              input {
-                width: 100%;
-                background: #ffffff;
-
-                border: 1px solid #eff0f7;
-
-                box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-                border-radius: 46px;
-                padding: 1rem 1.3rem;
-                position: relative;
-              }
-
-              // input.person {
-              //   text-align: end;
-              //   width: 100%;
-
-              //   background: transparent url("@/assets/images/person.svg")
-              //     no-repeat 13px center;
-              // }
-            }
-          }
 
           .first-page-next {
             @include flexItem(row, flex-end);
@@ -1076,6 +1057,7 @@ footer {
               padding: 1rem 2.5rem;
               border-radius: 2rem;
               cursor: pointer;
+              font-family: $workSans;
             }
           }
 
@@ -1090,6 +1072,7 @@ footer {
               padding: 1rem 2.5rem;
               border-radius: 2rem;
               cursor: pointer;
+              font-family: $workSans;
             }
 
             .prev-step {
@@ -1100,20 +1083,23 @@ footer {
               border-radius: 2rem;
               border: 2px solid $black;
               cursor: pointer;
+              font-family: $workSans;
             }
           }
 
           .submit-quote {
             color: $heading-color;
             margin-top: 2rem;
-            font-weight: bold;
+            font-weight: bolder;
+            font-family: $workSans;
           }
 
           .submit-review {
-            width: 67%;
+            width: 70%;
             margin: 0 auto 3.8rem auto;
             color: #6f6c90;
-            font-size: 1.1em;
+            font-size: 1.3em;
+        
           }
         }
       }

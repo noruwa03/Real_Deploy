@@ -184,13 +184,13 @@
       width: 70%;
 
       h1 {
-        font-size: 2.3em;
+        font-size: 2.6em;
         font-weight: bolder;
       }
 
       p {
         margin-top: 1.2rem;
-        font-size: 1.07em;
+        font-size: 1.5em;
       }
 
       .anchor-link {
@@ -207,6 +207,8 @@
       font-size: 2em;
       font-weight: bolder;
     }
+
+    
   }
 
   .about-us {
@@ -219,7 +221,22 @@
     &-desc {
       width: 90%;
 
-      font-size: 1.1em;
+      font-size: 1.4em;
+    }
+  }
+
+  .latest-news {
+    padding: 5rem 0;
+
+    h1 {
+      font-size: 2.2em;
+      font-weight: bolder;
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: 1.4em;
     }
   }
 
@@ -227,7 +244,7 @@
     padding: 5rem 0;
 
     .heading {
-      width: 50%;
+      width: 70%;
       margin: 0 auto;
       h4 {
         font-size: 2em;
@@ -241,29 +258,17 @@
       border-radius: 0.6rem;
 
       h5 {
-        font-size: 1.3em;
+        font-size: 1.5em;
         font-weight: bold;
       }
 
       p {
-        font-size: 1.04em;
+        font-size: 1.4em;
       }
     }
   }
 
-  .latest-news {
-    padding: 5rem 0;
-
-    h1 {
-      font-size: 2.2em;
-      font-weight: bolder;
-      width: 70%;
-    }
-
-    p {
-      font-size: 1.03em;
-    }
-  }
+  
 
   .contact-us {
     h1 {
@@ -272,18 +277,12 @@
   }
 
   footer {
-    
-    
-
     .footer-anchor-link {
       a {
         display: block;
-        color: $white;
-        font-size: 0.95em;
+ 
         margin: 1rem 0;
-        &:hover {
-          color: $white;
-        }
+       
       }
     }
 
@@ -291,11 +290,11 @@
       width: 100%;
       margin-top: 1.5rem;
       padding: 1rem 0;
-      background-color: $white;
+      
       p {
         width: 97%;
         margin: 0 auto;
-        font-weight: bold;
+        
       }
     }
   }
@@ -330,11 +329,11 @@
       .progress-bar {
         @include flexItem(row, space-between);
 
-        // margin: 40px 0;
+        
 
         .step {
           text-align: center;
-          // width: 100%;
+         
           position: relative;
 
           .check {
@@ -357,9 +356,9 @@
             position: relative;
             height: 2.4rem;
             width: 2.4rem;
-            // border: 2px solid $black;
+          
             border-radius: 50%;
-            // display: inline-block;
+           
             background-color: #eff0f7;
 
             @include flexItem(row, center);
@@ -443,11 +442,21 @@
             width: 25%;
             transition: margin-left 0.3s ease-in-out;
 
-            // Second form field
+            
+            .form-field-row {
+              @include flexItem(row, space-between);
+              padding-top: 0rem;
+
+              .form-field {
+                width: 48%;
+
+                @include flexItem(column, space-between);
+              }
+            }
 
             .second-form {
               width: 100%;
-              // background-color: red;
+
               @include flexItem(row, space-between);
 
               .form-item {
@@ -469,7 +478,6 @@
                   box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
                   border-radius: 16px;
 
-                  // Not necessary
                   &::before {
                     content: "";
                     position: absolute;
@@ -506,8 +514,6 @@
                     align-items: center;
 
                     transition: 0.3;
-
-                    // background-color: pink;
 
                     // .form-img {
                     // }
@@ -547,7 +553,7 @@
 
             .third-form {
               width: 100%;
-              // background-color: red;
+
               @include flexItem(row, space-between);
 
               .form-item {
@@ -569,7 +575,6 @@
                   box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
                   border-radius: 16px;
 
-                  // Not necessary
                   &::before {
                     content: "";
                     position: absolute;
@@ -646,79 +651,6 @@
               }
             }
 
-            .title {
-              font-size: 1.5em;
-              font-weight: bold;
-            }
-
-            .subtitle {
-              color: $text-color;
-              font-size: 1.1em;
-            }
-
-            .form-field-row {
-              @include flexItem(row, space-between);
-              padding-top: 0rem;
-
-              .form-field {
-                width: 48%;
-                // background-color: red;
-
-                @include flexItem(column, space-between);
-
-                .person {
-                  background: url("@/assets/images/person.svg");
-                  background-position: right;
-
-                  background-repeat: no-repeat;
-                }
-
-                .email {
-                  width: 100%;
-                  background: transparent url("@/assets/images/email.svg");
-                  background-position: right;
-
-                  background-repeat: no-repeat;
-                }
-
-                .phone {
-                  width: 100%;
-                  background: transparent url("@/assets/images/phone.svg");
-                  background-position: right;
-
-                  background-repeat: no-repeat;
-                }
-
-                .company {
-                  width: 100%;
-                  background: transparent url("@/assets/images/company.svg");
-                  background-position: right;
-
-                  background-repeat: no-repeat;
-                }
-
-                input {
-                  width: 100%;
-                  background: #ffffff;
-
-                  border: 1px solid #eff0f7;
-
-                  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-                  border-radius: 46px;
-                  padding: 1rem 1.3rem;
-                  position: relative;
-                }
-
-                // input.person {
-                //   text-align: end;
-                //   width: 100%;
-
-                //   background: transparent url("@/assets/images/person.svg")
-                //     no-repeat 13px center;
-                // }
-              }
-            }
-
             .first-page-next {
               @include flexItem(row, flex-end);
 
@@ -758,14 +690,14 @@
             .submit-quote {
               color: $heading-color;
               margin-top: 2rem;
-              font-weight: bold;
+              
             }
 
             .submit-review {
               width: 98%;
               margin: 0 auto 3.8rem auto;
               color: #6f6c90;
-              font-size: 1.1em;
+            
             }
           }
         }

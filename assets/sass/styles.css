@@ -35,6 +35,16 @@ Table Of Contents:
   font-family: "DmSans";
 }
 
+@font-face {
+  src: url("@/assets/fonts/WorkSans-Regular.ttf") format("truetype");
+  font-family: "WorkSans";
+}
+
+@font-face {
+  src: url("/assets/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-family: "SpaceGrostesk";
+}
+
 /**************************/
 /*        Css Reset       */
 /**************************/
@@ -44,7 +54,7 @@ Table Of Contents:
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
-  font-family: "DmSans";
+  font-family: "SpaceGrostesk";
   list-style: none;
 }
 
@@ -142,8 +152,9 @@ nav .nav-item-container .nav-item-list {
 
 nav .nav-item-container .nav-item-list .nav-item .nav-link {
   font-size: 1.12em;
-  color: #242956;
+  color: #0A0A0A;
   cursor: pointer;
+  font-family: "WorkSans";
 }
 
 nav .nav-item-container .get-free-quote {
@@ -157,6 +168,7 @@ nav .nav-item-container .get-free-quote .anchor-link {
   color: #fff;
   cursor: pointer;
   border-radius: 1.5rem;
+  font-family: "WorkSans";
 }
 
 header {
@@ -171,11 +183,13 @@ header .container {
 header .container h1 {
   font-size: 3.5em;
   font-weight: bolder;
-  color: #242956;
+  color: #0A0A0A;
+  font-family: "WorkSans";
 }
 
 header .container h1 span {
   color: #0CDC12;
+  font-family: "WorkSans";
 }
 
 header .container p {
@@ -191,38 +205,7 @@ header .container .anchor-link {
   color: #fff;
   cursor: pointer;
   border-radius: 1.5rem;
-}
-
-@-webkit-keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-
-@-webkit-keyframes typing {
-  40%,
-  60% {
-    left: calc(100% + 30px);
-  }
-  100% {
-    left: 0;
-  }
-}
-
-@keyframes typing {
-  40%,
-  60% {
-    left: calc(100% + 30px);
-  }
-  100% {
-    left: 0;
-  }
+  font-family: "WorkSans";
 }
 
 /**********************/
@@ -235,14 +218,14 @@ header .container .anchor-link {
 .services h2 {
   font-size: 2.5em;
   font-weight: bolder;
-  color: #242956;
+  color: #0A0A0A;
+  font-family: "WorkSans";
 }
 
 .services .container-lg .service-card {
   padding: 2rem;
   background: #ECF1F4;
-  height: 20rem;
-  /* grad */
+  height: 22.5rem;
   -webkit-box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
           box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
   border-radius: 0.6rem;
@@ -251,13 +234,14 @@ header .container .anchor-link {
 
 .services .container-lg .service-card h3 {
   font-size: 1.5em;
-  font-weight: bold;
-  color: #0B0706;
+  font-weight: bolder;
+  color: #0A0A0A;
   margin: 1.1rem 0;
+  font-family: "WorkSans";
 }
 
 .services .container-lg .service-card p {
-  font-size: 1.06em;
+  font-size: 1.4em;
   color: #4F5163;
 }
 
@@ -271,13 +255,14 @@ header .container .anchor-link {
 .about-us h2 {
   font-size: 2.5em;
   font-weight: bolder;
-  color: #242956;
+  color: #0A0A0A;
+  font-family: "WorkSans";
 }
 
 .about-us-desc {
   width: 50%;
   margin: 1rem auto;
-  font-size: 1.26em;
+  font-size: 1.5em;
   color: #4F5163;
 }
 
@@ -293,13 +278,33 @@ header .container .anchor-link {
 
 .about-us .container-lg .about-card h3 {
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: bolder;
   color: #0B0706;
   margin: 1.1rem 0;
+  font-family: "WorkSans";
 }
 
 .about-us .container-lg .about-card p {
-  font-size: 1.06em;
+  font-size: 1.4em;
+  color: #4F5163;
+}
+
+/**********************/
+/*       Latest News      */
+/**********************/
+.latest-news {
+  padding: 5rem 0;
+}
+
+.latest-news h1 {
+  font-size: 2.6em;
+  font-weight: bolder;
+  color: #0A0A0A;
+  font-family: "WorkSans";
+}
+
+.latest-news p {
+  font-size: 1.5em;
   color: #4F5163;
 }
 
@@ -319,7 +324,8 @@ header .container .anchor-link {
 .our-approach .heading h4 {
   font-size: 2.6em;
   font-weight: bolder;
-  color: #242956;
+  color: #0A0A0A;
+  font-family: "WorkSans";
 }
 
 .our-approach .approach-card {
@@ -328,35 +334,19 @@ header .container .anchor-link {
   -webkit-box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
           box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
   border-radius: 0.6rem;
-  height: 18rem;
+  height: 23rem;
 }
 
 .our-approach .approach-card h5 {
   font-size: 1.55em;
   font-weight: bold;
   color: #0B0706;
+  font-family: "WorkSans";
 }
 
 .our-approach .approach-card p {
-  font-size: 1.06em;
-}
-
-/**********************/
-/*       Latest News      */
-/**********************/
-.latest-news {
-  padding: 5rem 0;
-}
-
-.latest-news h1 {
-  font-size: 2.6em;
-  font-weight: bolder;
-  color: #242956;
-}
-
-.latest-news p {
-  font-size: 1.16em;
-  color: #4F5163;
+  font-size: 1.4em;
+  color: rgba(10, 10, 10, 0.75);
 }
 
 /**********************/
@@ -367,8 +357,9 @@ header .container .anchor-link {
 }
 
 .contact-us h1 {
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: bolder;
+  font-family: "WorkSans";
 }
 
 .contact-us p {
@@ -439,7 +430,7 @@ header .container .anchor-link {
   height: 100%;
   border: none;
   border-bottom: 0.13rem solid silver;
-  color: #242956;
+  color: #0A0A0A;
   font-size: 1em;
   font-weight: 500;
   background: transparent;
@@ -452,7 +443,8 @@ header .container .anchor-link {
   transition: all 0.3s ease;
   bottom: 0.98rem;
   left: 0;
-  color: #242956;
+  color: #0A0A0A;
+  font-size: 1.1em;
 }
 
 .contact-us .row-item .contact-form .wrapper .form-row {
@@ -488,7 +480,7 @@ header .container .anchor-link {
   height: 100%;
   border: none;
   border-bottom: 0.13rem solid silver;
-  color: #242956;
+  color: #0A0A0A;
   font-size: 1em;
   font-weight: 500;
   background: transparent;
@@ -501,7 +493,7 @@ header .container .anchor-link {
   transition: all 0.3s ease;
   bottom: 0.98rem;
   left: 0;
-  color: #242956;
+  color: #0A0A0A;
 }
 
 .contact-us .row-item .contact-form .wrapper .form-row .post-code {
@@ -517,7 +509,7 @@ header .container .anchor-link {
   height: 100%;
   border: none;
   border-bottom: 0.13rem solid silver;
-  color: #242956;
+  color: #0A0A0A;
   font-size: 1em;
   font-weight: 500;
   background: transparent;
@@ -530,7 +522,7 @@ header .container .anchor-link {
   transition: all 0.3s ease;
   bottom: 0.98rem;
   left: 0;
-  color: #242956;
+  color: #0A0A0A;
 }
 
 .contact-us .row-item .contact-form .wrapper input:focus ~ label,
@@ -559,7 +551,7 @@ header .container .anchor-link {
           transform: scaleX(0);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background: #242956;
+  background: #0A0A0A;
   -webkit-transform-origin: center;
           transform-origin: center;
 }
@@ -580,6 +572,12 @@ header .container .anchor-link {
   font-weight: bold;
   letter-spacing: 0.1rem;
   border-radius: 1.5rem;
+  font-family: "WorkSans";
+}
+
+.contact-us .row-item .contact-form .wrapper .nda {
+  font-size: 1.1em;
+  color: #4F5163;
 }
 
 .contact-us .row-item .contact-form .wrapper .heading {
@@ -615,11 +613,12 @@ header .container .anchor-link {
 
 .contact-us .row-item .contact-form .wrapper .file-box span {
   color: #4F5163;
+  font-size: 1.1em;
 }
 
 .contact-us .row-item .contact-form .wrapper .upload-instruction {
   margin-top: 1rem;
-  font-size: 0.86em;
+  font-size: 1.1em;
   color: #4F5163;
 }
 
@@ -629,7 +628,8 @@ header .container .anchor-link {
 
 .contact-us .row-item .address div {
   margin-top: 2rem;
-  font-size: 1.07em;
+  font-size: 1.2em;
+  color: #4F5163;
 }
 
 .contact-us .row-item .address div span {
@@ -640,6 +640,10 @@ header .container .anchor-link {
   width: 1.3rem;
 }
 
+.contact-us .row-item .address .contact-email {
+  font-size: 1.3em;
+}
+
 footer {
   padding-top: 5rem;
   background-color: #0B0706;
@@ -647,16 +651,19 @@ footer {
 
 footer h5 {
   color: #fff;
+  font-family: "WorkSans";
 }
 
 footer .brand-name {
   font-size: 2.4em;
   color: #fff;
   font-weight: bold;
+  font-family: "WorkSans";
 }
 
 footer .about {
   color: #fff;
+  font-size: 1.14em;
 }
 
 footer .footer-anchor-link a {
@@ -664,6 +671,7 @@ footer .footer-anchor-link a {
   color: #fff;
   font-size: 0.95em;
   margin: 1rem 0 0 1rem;
+  font-family: "WorkSans";
 }
 
 footer .footer-anchor-link a:hover {
@@ -680,7 +688,6 @@ footer .all-rights-reserved {
 footer .all-rights-reserved p {
   width: 86%;
   margin: 0 auto;
-  font-weight: bold;
 }
 
 .contact-page {
@@ -690,6 +697,7 @@ footer .all-rights-reserved p {
 
 .contact-page h1 {
   font-weight: bolder;
+  font-family: "WorkSans";
 }
 
 .contact-page .box {
@@ -699,7 +707,7 @@ footer .all-rights-reserved p {
 
 .contact-page .box p {
   color: #6f6c90;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .contact-page .contact-card {
@@ -865,6 +873,96 @@ footer .all-rights-reserved p {
   width: 25%;
   -webkit-transition: margin-left 0.3s ease-in-out;
   transition: margin-left 0.3s ease-in-out;
+}
+
+.contact-page .contact-card .form-outer form .page .title {
+  font-size: 1.6em;
+  font-weight: bolder;
+  font-family: "WorkSans";
+}
+
+.contact-page .contact-card .form-outer form .page .subtitle {
+  color: #6F6C90;
+  font-size: 1.25em;
+}
+
+.contact-page .contact-card .form-outer form .page .form-field-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 1.3rem;
+}
+
+.contact-page .contact-card .form-outer form .page .form-field-row .form-field {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-page .contact-card .form-outer form .page .form-field-row .form-field .person {
+  background: url("@/assets/images/person.svg");
+  background-position: right 18px top 10px;
+  background-repeat: no-repeat;
+}
+
+.contact-page .contact-card .form-outer form .page .form-field-row .form-field .email {
+  width: 100%;
+  background: url("@/assets/images/email.svg");
+  background-position: right 18px top 20px;
+  background-repeat: no-repeat;
+}
+
+.contact-page .contact-card .form-outer form .page .form-field-row .form-field .phone {
+  width: 100%;
+  background: url("@/assets/images/phone.svg");
+  background-position: right 18px top 15px;
+  background-repeat: no-repeat;
+}
+
+.contact-page .contact-card .form-outer form .page .form-field-row .form-field .company {
+  width: 100%;
+  background: url("@/assets/images/company.svg");
+  background-position: right 18px top 10px;
+  background-repeat: no-repeat;
+}
+
+.contact-page .contact-card .form-outer form .page .form-field-row .form-field label {
+  font-family: "WorkSans";
+}
+
+.contact-page .contact-card .form-outer form .page .form-field-row .form-field input {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #eff0f7;
+  -webkit-box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+          box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  border-radius: 46px;
+  padding: 1rem 2.2rem 1rem 1rem;
 }
 
 .contact-page .contact-card .form-outer form .page .second-form {
@@ -1124,92 +1222,6 @@ footer .all-rights-reserved p {
   opacity: 1;
 }
 
-.contact-page .contact-card .form-outer form .page .title {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.contact-page .contact-card .form-outer form .page .subtitle {
-  color: #4F5163;
-  font-size: 1.1em;
-}
-
-.contact-page .contact-card .form-outer form .page .form-field-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 1.3rem;
-}
-
-.contact-page .contact-card .form-outer form .page .form-field-row .form-field {
-  width: 47%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.contact-page .contact-card .form-outer form .page .form-field-row .form-field .person {
-  background: url("@/assets/images/person.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-.contact-page .contact-card .form-outer form .page .form-field-row .form-field .email {
-  width: 100%;
-  background: transparent url("@/assets/images/email.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-.contact-page .contact-card .form-outer form .page .form-field-row .form-field .phone {
-  width: 100%;
-  background: transparent url("@/assets/images/phone.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-.contact-page .contact-card .form-outer form .page .form-field-row .form-field .company {
-  width: 100%;
-  background: transparent url("@/assets/images/company.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-.contact-page .contact-card .form-outer form .page .form-field-row .form-field input {
-  width: 100%;
-  background: #ffffff;
-  border: 1px solid #eff0f7;
-  -webkit-box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-          box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-  border-radius: 46px;
-  padding: 1rem 1.3rem;
-  position: relative;
-}
-
 .contact-page .contact-card .form-outer form .page .first-page-next {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1235,6 +1247,7 @@ footer .all-rights-reserved p {
   padding: 1rem 2.5rem;
   border-radius: 2rem;
   cursor: pointer;
+  font-family: "WorkSans";
 }
 
 .contact-page .contact-card .form-outer form .page .second-page-next,
@@ -1264,6 +1277,7 @@ footer .all-rights-reserved p {
   padding: 1rem 2.5rem;
   border-radius: 2rem;
   cursor: pointer;
+  font-family: "WorkSans";
 }
 
 .contact-page .contact-card .form-outer form .page .second-page-next .prev-step,
@@ -1275,19 +1289,21 @@ footer .all-rights-reserved p {
   border-radius: 2rem;
   border: 2px solid #0B0706;
   cursor: pointer;
+  font-family: "WorkSans";
 }
 
 .contact-page .contact-card .form-outer form .page .submit-quote {
-  color: #242956;
+  color: #0A0A0A;
   margin-top: 2rem;
-  font-weight: bold;
+  font-weight: bolder;
+  font-family: "WorkSans";
 }
 
 .contact-page .contact-card .form-outer form .page .submit-review {
-  width: 67%;
+  width: 70%;
   margin: 0 auto 3.8rem auto;
   color: #6f6c90;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1295,47 +1311,100 @@ footer .all-rights-reserved p {
     width: 60%;
   }
   header .container h1 {
-    font-size: 2.4em;
+    font-size: 3em;
     font-weight: bolder;
   }
   header .container p {
     margin-top: 1.2rem;
-    font-size: 1.1em;
+    font-size: 1.4em;
   }
   header .container .anchor-link {
     padding: 0.8rem 1rem;
     font-size: 1em;
   }
-  .contact-us h1 {
-    font-size: 2.7em;
-    font-weight: bolder;
-  }
   .services {
     padding: 4rem 0;
   }
   .services h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bolder;
+    color: #0A0A0A;
+    font-family: "WorkSans";
   }
-  footer h5 {
-    color: #fff;
+  .services .container-lg .service-card {
+    padding: 2rem;
+    height: 25rem;
+    border-radius: 0.6rem;
+    margin: 0.9rem 0;
+  }
+  .services .container-lg .service-card h3 {
+    font-size: 1.5em;
+  }
+  .services .container-lg .service-card p {
+    font-size: 1.4em;
+  }
+  .about-us {
+    padding: 5rem 0;
+  }
+  .about-us h2 {
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: #0A0A0A;
+    font-family: "WorkSans";
+  }
+  .about-us-desc {
+    width: 50%;
+    margin: 1rem auto;
+    font-size: 1.5em;
+    color: #4F5163;
+  }
+  .about-us .container-lg .about-card {
+    padding: 2rem 1rem;
+    border-radius: 0.6rem;
+    margin: 0.9rem 0;
+    height: 25rem;
+  }
+  .about-us .container-lg .about-card h3 {
+    font-size: 1.5em;
+  }
+  .about-us .container-lg .about-card p {
+    font-size: 1.4em;
+  }
+  .our-approach {
+    padding: 5rem 0;
+    background-color: #FAFAFB;
+  }
+  .our-approach .heading {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .our-approach .heading h4 {
+    font-size: 2.6em;
+    font-weight: bolder;
+    color: #0A0A0A;
+    font-family: "WorkSans";
+  }
+  .our-approach .approach-card {
+    padding: 2rem;
+    border-radius: 0.6rem;
+    height: 29rem;
+  }
+  .our-approach .approach-card h5 {
+    font-size: 1.55em;
+  }
+  .our-approach .approach-card p {
+    font-size: 1.4em;
+  }
+  .contact-us h1 {
+    font-size: 2.7em;
+    font-weight: bolder;
   }
   footer .brand-name {
     font-size: 2.4em;
-    color: #fff;
-    font-weight: bold;
-  }
-  footer .about {
-    color: #fff;
   }
   footer .footer-anchor-link a {
     display: block;
-    color: #fff;
-    font-size: 0.95em;
     margin: 1rem 0 0 1rem;
-  }
-  footer .footer-anchor-link a:hover {
-    color: #fff;
   }
   footer .all-rights-reserved {
     width: 100%;
@@ -1506,6 +1575,42 @@ footer .all-rights-reserved p {
     -webkit-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
   }
+  .contact-page .contact-card .form-outer form .page .form-field-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 0rem;
+  }
+  .contact-page .contact-card .form-outer form .page .form-field-row .form-field {
+    width: 48%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .contact-page .contact-card .form-outer form .page .second-form {
     width: 100%;
     display: -webkit-box;
@@ -1740,83 +1845,6 @@ footer .all-rights-reserved p {
   .contact-page .contact-card .form-outer form .page .third-form .form-item .form-input:checked ~ .form-label {
     opacity: 1;
   }
-  .contact-page .contact-card .form-outer form .page .title {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  .contact-page .contact-card .form-outer form .page .subtitle {
-    color: #4F5163;
-    font-size: 1.1em;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-top: 0rem;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field {
-    width: 48%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .person {
-    background: url("@/assets/images/person.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .email {
-    width: 100%;
-    background: transparent url("@/assets/images/email.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .phone {
-    width: 100%;
-    background: transparent url("@/assets/images/phone.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .company {
-    width: 100%;
-    background: transparent url("@/assets/images/company.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field input {
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #eff0f7;
-    -webkit-box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-            box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-    border-radius: 46px;
-    padding: 1rem 1.3rem;
-    position: relative;
-  }
   .contact-page .contact-card .form-outer form .page .first-page-next {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1876,15 +1904,11 @@ footer .all-rights-reserved p {
     font-size: 0.89em;
   }
   .contact-page .contact-card .form-outer form .page .submit-quote {
-    color: #242956;
     margin-top: 2rem;
-    font-weight: bold;
   }
   .contact-page .contact-card .form-outer form .page .submit-review {
     width: 98%;
     margin: 0 auto 3.8rem auto;
-    color: #6f6c90;
-    font-size: 1.1em;
   }
 }
 
@@ -1916,7 +1940,7 @@ footer .all-rights-reserved p {
     position: absolute;
     height: 4px;
     width: 50%;
-    background: #242956;
+    background: #0A0A0A;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -2028,7 +2052,7 @@ footer .all-rights-reserved p {
     font-size: 1.3em;
     text-transform: capitalize;
     font-weight: 800;
-    color: #242956;
+    color: #0A0A0A;
     -webkit-transition: all 250ms linear;
     transition: all 250ms linear;
     margin: 1rem 0;
@@ -2045,12 +2069,12 @@ footer .all-rights-reserved p {
     width: 70%;
   }
   header .container h1 {
-    font-size: 2.3em;
+    font-size: 2.6em;
     font-weight: bolder;
   }
   header .container p {
     margin-top: 1.2rem;
-    font-size: 1.07em;
+    font-size: 1.5em;
   }
   header .container .anchor-link {
     padding: 0.8rem 1rem;
@@ -2071,13 +2095,25 @@ footer .all-rights-reserved p {
   }
   .about-us-desc {
     width: 90%;
-    font-size: 1.1em;
+    font-size: 1.4em;
+  }
+  .latest-news {
+    padding: 5rem 0;
+  }
+  .latest-news h1 {
+    font-size: 2.2em;
+    font-weight: bolder;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .latest-news p {
+    font-size: 1.4em;
   }
   .our-approach {
     padding: 5rem 0;
   }
   .our-approach .heading {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
   }
   .our-approach .heading h4 {
@@ -2091,45 +2127,27 @@ footer .all-rights-reserved p {
     border-radius: 0.6rem;
   }
   .our-approach .approach-card h5 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
   }
   .our-approach .approach-card p {
-    font-size: 1.04em;
-  }
-  .latest-news {
-    padding: 5rem 0;
-  }
-  .latest-news h1 {
-    font-size: 2.2em;
-    font-weight: bolder;
-    width: 70%;
-  }
-  .latest-news p {
-    font-size: 1.03em;
+    font-size: 1.4em;
   }
   .contact-us h1 {
     font-size: 2.6em;
   }
   footer .footer-anchor-link a {
     display: block;
-    color: #fff;
-    font-size: 0.95em;
     margin: 1rem 0;
-  }
-  footer .footer-anchor-link a:hover {
-    color: #fff;
   }
   footer .all-rights-reserved {
     width: 100%;
     margin-top: 1.5rem;
     padding: 1rem 0;
-    background-color: #fff;
   }
   footer .all-rights-reserved p {
     width: 97%;
     margin: 0 auto;
-    font-weight: bold;
   }
   .contact-page {
     padding: 5rem 0;
@@ -2291,6 +2309,42 @@ footer .all-rights-reserved p {
     -webkit-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
   }
+  .contact-page .contact-card .form-outer form .page .form-field-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 0rem;
+  }
+  .contact-page .contact-card .form-outer form .page .form-field-row .form-field {
+    width: 48%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .contact-page .contact-card .form-outer form .page .second-form {
     width: 100%;
     display: -webkit-box;
@@ -2525,83 +2579,6 @@ footer .all-rights-reserved p {
   .contact-page .contact-card .form-outer form .page .third-form .form-item .form-input:checked ~ .form-label {
     opacity: 1;
   }
-  .contact-page .contact-card .form-outer form .page .title {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  .contact-page .contact-card .form-outer form .page .subtitle {
-    color: #4F5163;
-    font-size: 1.1em;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-top: 0rem;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field {
-    width: 48%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .person {
-    background: url("@/assets/images/person.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .email {
-    width: 100%;
-    background: transparent url("@/assets/images/email.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .phone {
-    width: 100%;
-    background: transparent url("@/assets/images/phone.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .company {
-    width: 100%;
-    background: transparent url("@/assets/images/company.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field input {
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #eff0f7;
-    -webkit-box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-            box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-    border-radius: 46px;
-    padding: 1rem 1.3rem;
-    position: relative;
-  }
   .contact-page .contact-card .form-outer form .page .first-page-next {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2661,15 +2638,13 @@ footer .all-rights-reserved p {
     font-size: 0.89em;
   }
   .contact-page .contact-card .form-outer form .page .submit-quote {
-    color: #242956;
+    color: #0A0A0A;
     margin-top: 2rem;
-    font-weight: bold;
   }
   .contact-page .contact-card .form-outer form .page .submit-review {
     width: 98%;
     margin: 0 auto 3.8rem auto;
     color: #6f6c90;
-    font-size: 1.1em;
   }
 }
 
@@ -2678,42 +2653,71 @@ footer .all-rights-reserved p {
     width: 96%;
   }
   header .container h1 {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bolder;
   }
   header .container p {
     margin-top: 1.2rem;
-    font-size: 1.03em;
+    font-size: 1.4em;
   }
   header .container .anchor-link {
     padding: 0.8rem 1rem;
-    font-size: 1em;
   }
   .services {
     padding: 4rem 0;
   }
   .services h2 {
-    font-size: 1.8em;
-    font-weight: bolder;
+    font-size: 2em;
+  }
+  .about-us {
+    padding: 4rem 0;
+  }
+  .about-us h2 {
+    font-size: 2em;
+  }
+  .about-us-desc {
+    width: 93%;
+    font-size: 1.4em;
+  }
+  .our-approach {
+    padding: 4rem 0;
+  }
+  .our-approach .heading {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .our-approach .heading h4 {
+    font-size: 2em;
+  }
+  .our-approach .approach-card {
+    padding: 2rem;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
+            box-shadow: rgba(149, 157, 165, 0.1) 0px 7px 26px;
+    border-radius: 0.6rem;
+  }
+  .our-approach .approach-card h5 {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .our-approach .approach-card p {
+    font-size: 1.4em;
   }
   .latest-news {
     padding: 5rem 0;
   }
   .latest-news h1 {
-    font-size: 1.8em;
+    font-size: 2em;
     width: 100%;
   }
   .latest-news p {
-    font-size: 1em;
+    font-size: 1.4em;
+    padding: 0 0.6rem;
   }
   .contact-us {
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
   .contact-us h1 {
-    font-size: 1.8em;
-  }
-  .contact-us p {
-    font-size: 1em;
+    font-size: 2em;
   }
   .contact-us p span {
     display: block;
@@ -2746,41 +2750,25 @@ footer .all-rights-reserved p {
   }
   .contact-us .row-item .address div {
     margin-top: 2rem;
-    font-size: 1em;
   }
   .contact-us .row-item .address div span {
     display: block;
   }
-  footer h5 {
-    color: #fff;
-  }
   footer .brand-name {
     font-size: 2.4em;
-    color: #fff;
-    font-weight: bold;
-  }
-  footer .about {
-    color: #fff;
   }
   footer .footer-anchor-link a {
     display: block;
-    color: #fff;
-    font-size: 0.95em;
     margin: 1rem 0;
-  }
-  footer .footer-anchor-link a:hover {
-    color: #fff;
   }
   footer .all-rights-reserved {
     width: 100%;
     margin-top: 1.5rem;
     padding: 1rem 0;
-    background-color: #fff;
   }
   footer .all-rights-reserved p {
     width: 97%;
     margin: 0 auto;
-    font-weight: bold;
   }
   .contact-page {
     padding: 5rem 0;
@@ -2800,9 +2788,6 @@ footer .all-rights-reserved p {
     width: 96%;
     margin: 1.4rem auto;
     padding: 2rem 1rem;
-    background: #fff;
-    -webkit-box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
-            box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
     border-radius: 1.3rem;
   }
   .contact-page .contact-card .progress-bar {
@@ -2843,7 +2828,6 @@ footer .all-rights-reserved p {
     height: 2.4rem;
     width: 2.4rem;
     border-radius: 50%;
-    background-color: #eff0f7;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2864,11 +2848,6 @@ footer .all-rights-reserved p {
             align-items: center;
     -webkit-transition: 0.2;
     transition: 0.2;
-    color: #6f6c90;
-  }
-  .contact-page .contact-card .progress-bar .step .bullet.active {
-    background-color: #0B0706;
-    color: #fff;
   }
   .contact-page .contact-card .progress-bar .step .bullet::before, .contact-page .contact-card .progress-bar .step .bullet::after {
     position: absolute;
@@ -2877,7 +2856,6 @@ footer .all-rights-reserved p {
     right: -120px;
     height: 6px;
     width: 100px;
-    background-color: #eff0f7;
     border-radius: 1rem;
   }
   .contact-page .contact-card .progress-bar .step .bullet.active::after {
@@ -2923,7 +2901,6 @@ footer .all-rights-reserved p {
   .contact-page .contact-card .divider {
     width: 100%;
     height: 0.1rem;
-    background-color: #d9dbe9;
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
@@ -2941,6 +2918,50 @@ footer .all-rights-reserved p {
     width: 25%;
     -webkit-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
+  }
+  .contact-page .contact-card .form-outer form .page .title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .contact-page .contact-card .form-outer form .page .subtitle {
+    color: #4F5163;
+    font-size: 1.18em;
+  }
+  .contact-page .contact-card .form-outer form .page .form-field-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 0rem;
+  }
+  .contact-page .contact-card .form-outer form .page .form-field-row .form-field {
+    width: 48%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .contact-page .contact-card .form-outer form .page .second-form {
     width: 100%;
@@ -3176,83 +3197,6 @@ footer .all-rights-reserved p {
   .contact-page .contact-card .form-outer form .page .third-form .form-item .form-input:checked ~ .form-label {
     opacity: 1;
   }
-  .contact-page .contact-card .form-outer form .page .title {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  .contact-page .contact-card .form-outer form .page .subtitle {
-    color: #4F5163;
-    font-size: 1.1em;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-top: 0rem;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field {
-    width: 48%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .person {
-    background: url("@/assets/images/person.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .email {
-    width: 100%;
-    background: transparent url("@/assets/images/email.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .phone {
-    width: 100%;
-    background: transparent url("@/assets/images/phone.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .company {
-    width: 100%;
-    background: transparent url("@/assets/images/company.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field input {
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #eff0f7;
-    -webkit-box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-            box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-    border-radius: 46px;
-    padding: 1rem 1.3rem;
-    position: relative;
-  }
   .contact-page .contact-card .form-outer form .page .first-page-next {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3312,15 +3256,15 @@ footer .all-rights-reserved p {
     font-size: 0.89em;
   }
   .contact-page .contact-card .form-outer form .page .submit-quote {
-    color: #242956;
+    color: #0A0A0A;
     margin-top: 2rem;
-    font-weight: bold;
+    font-size: 1.7em;
   }
   .contact-page .contact-card .form-outer form .page .submit-review {
     width: 98%;
     margin: 0 auto 3.8rem auto;
     color: #6f6c90;
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
 }
 
@@ -3333,11 +3277,11 @@ footer .all-rights-reserved p {
     width: 96%;
   }
   header .container h1 {
-    font-size: 1.7em;
+    font-size: 2em;
   }
   header .container p {
     margin-top: 1.2rem;
-    font-size: 1.03em;
+    font-size: 1.3em;
   }
   header .container .anchor-link {
     padding: 0.8rem 1rem;
@@ -3359,7 +3303,18 @@ footer .all-rights-reserved p {
   }
   .about-us-desc {
     width: 93%;
-    font-size: 1.1em;
+    font-size: 1.3em;
+  }
+  .latest-news {
+    padding: 3rem 0;
+  }
+  .latest-news h1 {
+    font-size: 1.7em;
+    width: 100%;
+  }
+  .latest-news p {
+    font-size: 1.3em;
+    padding: 0 0.6rem;
   }
   .our-approach {
     padding: 3rem 0;
@@ -3379,21 +3334,11 @@ footer .all-rights-reserved p {
     border-radius: 0.6rem;
   }
   .our-approach .approach-card h5 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
   }
   .our-approach .approach-card p {
-    font-size: 1.04em;
-  }
-  .latest-news {
-    padding: 3rem 0;
-  }
-  .latest-news h1 {
-    font-size: 1.7em;
-    width: 100%;
-  }
-  .latest-news p {
-    font-size: 1em;
+    font-size: 1.3em;
   }
   .contact-us {
     padding: 3rem 0;
@@ -3441,7 +3386,7 @@ footer .all-rights-reserved p {
   }
   .contact-us .row-item .address div {
     margin-top: 2rem;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .contact-us .row-item .address div span {
     display: block;
@@ -3470,12 +3415,10 @@ footer .all-rights-reserved p {
     width: 100%;
     margin-top: 1.5rem;
     padding: 1rem 0;
-    background-color: #fff;
   }
   footer .all-rights-reserved p {
     width: 95%;
     margin: 0 auto;
-    font-weight: bold;
   }
   .contact-page {
     padding: 5rem 0;
@@ -3489,15 +3432,12 @@ footer .all-rights-reserved p {
   }
   .contact-page .box p {
     color: #6f6c90;
-    font-size: 1.2em;
+    font-size: 1.25em;
   }
   .contact-page .contact-card {
     width: 96%;
     margin: 1.4rem auto;
     padding: 2rem 1rem;
-    background: #fff;
-    -webkit-box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
-            box-shadow: 0px 0px 25px rgba(209, 209, 209, 0.3);
     border-radius: 1.3rem;
   }
   .contact-page .contact-card .progress-bar {
@@ -3537,8 +3477,6 @@ footer .all-rights-reserved p {
     position: relative;
     height: 2.4rem;
     width: 2.4rem;
-    border-radius: 50%;
-    background-color: #eff0f7;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3559,11 +3497,6 @@ footer .all-rights-reserved p {
             align-items: center;
     -webkit-transition: 0.2;
     transition: 0.2;
-    color: #6f6c90;
-  }
-  .contact-page .contact-card .progress-bar .step .bullet.active {
-    background-color: #0B0706;
-    color: #fff;
   }
   .contact-page .contact-card .progress-bar .step .bullet::before, .contact-page .contact-card .progress-bar .step .bullet::after {
     position: absolute;
@@ -3572,11 +3505,9 @@ footer .all-rights-reserved p {
     right: -44px;
     height: 6px;
     width: 30px;
-    background-color: #eff0f7;
     border-radius: 1rem;
   }
   .contact-page .contact-card .progress-bar .step .bullet.active::after {
-    background-color: #0B0706;
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
     -webkit-transform-origin: left;
@@ -3613,12 +3544,10 @@ footer .all-rights-reserved p {
   }
   .contact-page .contact-card .progress-bar .step .bullet .check.active {
     display: block;
-    color: #fff;
   }
   .contact-page .contact-card .divider {
     width: 100%;
     height: 0.1rem;
-    background-color: #d9dbe9;
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
@@ -3636,6 +3565,48 @@ footer .all-rights-reserved p {
     width: 25%;
     -webkit-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
+  }
+  .contact-page .contact-card .form-outer form .page .title {
+    font-size: 1.5em;
+  }
+  .contact-page .contact-card .form-outer form .page .subtitle {
+    font-size: 1.18em;
+  }
+  .contact-page .contact-card .form-outer form .page .form-field-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 0rem;
+  }
+  .contact-page .contact-card .form-outer form .page .form-field-row .form-field {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .contact-page .contact-card .form-outer form .page .second-form {
     width: 100%;
@@ -3657,7 +3628,6 @@ footer .all-rights-reserved p {
   }
   .contact-page .contact-card .form-outer form .page .second-form .form-item {
     margin: 0.5rem 0;
-    background-color: #fff;
     width: 100%;
   }
   .contact-page .contact-card .form-outer form .page .second-form .form-item .form-label {
@@ -3669,9 +3639,6 @@ footer .all-rights-reserved p {
     cursor: pointer;
     -webkit-transition: 0.3;
     transition: 0.3;
-    border: 1px solid #eff0f7;
-    -webkit-box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-            box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
     border-radius: 16px;
   }
   .contact-page .contact-card .form-outer form .page .second-form .form-item .form-label::before {
@@ -3682,8 +3649,6 @@ footer .all-rights-reserved p {
     display: flex;
     width: 24px;
     height: 24px;
-    background-color: #0B0706;
-    border-radius: 1px solid #ddd;
     top: 15px;
     left: 15px;
     border-radius: 50%;
@@ -3732,7 +3697,6 @@ footer .all-rights-reserved p {
   }
   .contact-page .contact-card .form-outer form .page .second-form .form-item .form-label .form-content .form-name {
     font-size: 1.1em;
-    color: #4F5163;
   }
   .contact-page .contact-card .form-outer form .page .second-form .form-item .form-input {
     position: absolute;
@@ -3773,7 +3737,6 @@ footer .all-rights-reserved p {
   }
   .contact-page .contact-card .form-outer form .page .third-form .form-item {
     margin: 0.5rem 0;
-    background-color: #fff;
     width: 100%;
   }
   .contact-page .contact-card .form-outer form .page .third-form .form-item .form-label {
@@ -3785,9 +3748,6 @@ footer .all-rights-reserved p {
     cursor: pointer;
     -webkit-transition: 0.3;
     transition: 0.3;
-    border: 1px solid #eff0f7;
-    -webkit-box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-            box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
     border-radius: 16px;
   }
   .contact-page .contact-card .form-outer form .page .third-form .form-item .form-label::before {
@@ -3804,9 +3764,6 @@ footer .all-rights-reserved p {
     border-radius: 50%;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border: 1.2px solid #d9dbe9;
-    -webkit-box-shadow: inset 0px -3px 7px rgba(20, 20, 43, 0.08);
-            box-shadow: inset 0px -3px 7px rgba(20, 20, 43, 0.08);
   }
   .contact-page .contact-card .form-outer form .page .third-form .form-item .form-label::after {
     content: "";
@@ -3850,7 +3807,6 @@ footer .all-rights-reserved p {
   }
   .contact-page .contact-card .form-outer form .page .third-form .form-item .form-label .form-content .form-name {
     font-size: 1.1em;
-    color: #4F5163;
   }
   .contact-page .contact-card .form-outer form .page .third-form .form-item .form-input {
     position: absolute;
@@ -3870,83 +3826,6 @@ footer .all-rights-reserved p {
   }
   .contact-page .contact-card .form-outer form .page .third-form .form-item .form-input:checked ~ .form-label {
     opacity: 1;
-  }
-  .contact-page .contact-card .form-outer form .page .title {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  .contact-page .contact-card .form-outer form .page .subtitle {
-    color: #4F5163;
-    font-size: 1.1em;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-top: 0rem;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .person {
-    background: url("@/assets/images/person.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .email {
-    width: 100%;
-    background: transparent url("@/assets/images/email.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .phone {
-    width: 100%;
-    background: transparent url("@/assets/images/phone.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field .company {
-    width: 100%;
-    background: transparent url("@/assets/images/company.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-  }
-  .contact-page .contact-card .form-outer form .page .form-field-row .form-field input {
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #eff0f7;
-    -webkit-box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-            box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-    border-radius: 46px;
-    padding: 1rem 1.3rem;
-    position: relative;
   }
   .contact-page .contact-card .form-outer form .page .first-page-next {
     display: -webkit-box;
@@ -4007,15 +3886,14 @@ footer .all-rights-reserved p {
     font-size: 0.89em;
   }
   .contact-page .contact-card .form-outer form .page .submit-quote {
-    color: #242956;
     margin-top: 2rem;
-    font-weight: bold;
+    font-size: 1.6em;
   }
   .contact-page .contact-card .form-outer form .page .submit-review {
     width: 96%;
     margin: 0 auto 3.8rem auto;
     color: #6f6c90;
-    font-size: 0.95em;
+    font-size: 1.3em;
   }
 }
 /*# sourceMappingURL=styles.css.map */

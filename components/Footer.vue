@@ -58,7 +58,7 @@
             <div class="col-12 about my-3">
               Your trusted partner in building sustainable products for the future. Be it blockchain development, AI, web apps, UI/UX design or SaaS. We are on a mission to give your startup a headstart.
             </div>
-            <div class="col-12 mt-2 mb-3">
+            <div class="col-12 mt-2 mb-5">
               <a href="" class="me-3">
                 <img src="@/assets/images/discord.svg" alt="">
               </a>
@@ -109,13 +109,18 @@
       </div>
     </div>
     <div class="all-rights-reserved">
-      <p>2022 All Rights Reserved</p>
+      <p>{{footerDate}} All Rights Reserved</p>
     </div>
   </footer>
 </template>
 
 <script>
-export default {};
+export default {
+  setup() {
+    const footerDate = new Date().getFullYear();
+    return {footerDate}
+  }
+};
 </script>
 
 <style>

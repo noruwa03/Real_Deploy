@@ -54,6 +54,7 @@
                 <div class="form-field">
                   <label for="" class="my-3">Name</label>
                   <input type="text" placeholder="John Carter" class="person" />
+                  
                   <!-- <span class="person"></span> -->
                 </div>
 

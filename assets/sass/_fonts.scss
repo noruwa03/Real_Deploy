@@ -22,7 +22,24 @@
 
 }
 
+@font-face {
+  
 
+  src: url("@/assets/fonts/WorkSans-Regular.ttf") format("truetype");
+  font-family: "WorkSans";
+
+}
+
+@font-face {
+  
+
+  src: url("/assets/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-family: "SpaceGrostesk";
+
+}
+
+$workSans: "WorkSans";
+$spaceGrostesk: "SpaceGrostesk";
 $dmSans: "DmSans";
 $generalSans: "GeneralSans";
 $poppins : "Poppins";

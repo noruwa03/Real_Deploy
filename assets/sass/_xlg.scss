@@ -4,18 +4,115 @@
       width: 60%;
 
       h1 {
-        font-size: 2.4em;
+        font-size: 3em;
         font-weight: bolder;
       }
 
       p {
         margin-top: 1.2rem;
-        font-size: 1.1em;
+        font-size: 1.4em;
       }
 
       .anchor-link {
         padding: 0.8rem 1rem;
         font-size: 1em;
+      }
+    }
+  }
+
+  .services {
+    padding: 4rem 0;
+
+    h2 {
+      font-size: 2.5em;
+      font-weight: bolder;
+      color: $heading-color;
+      font-family: $workSans;
+    }
+
+    .container-lg {
+      .service-card {
+        padding: 2rem;
+
+        height: 25rem;
+
+        border-radius: 0.6rem;
+        margin: 0.9rem 0;
+
+        h3 {
+          font-size: 1.5em;
+        }
+
+        p {
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+
+  .about-us {
+    padding: 5rem 0;
+
+    h2 {
+      font-size: 2.5em;
+      font-weight: bolder;
+      color: $heading-color;
+      font-family: $workSans;
+    }
+
+    &-desc {
+      width: 50%;
+      margin: 1rem auto;
+      font-size: 1.5em;
+      color: $text-color;
+    }
+
+    .container-lg {
+      .about-card {
+        padding: 2rem 1rem;
+
+        border-radius: 0.6rem;
+        margin: 0.9rem 0;
+        height: 25rem;
+
+        h3 {
+          font-size: 1.5em;
+        }
+
+        p {
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+
+  .our-approach {
+    padding: 5rem 0;
+    background-color: $gray;
+
+    .heading {
+      width: 50%;
+      margin: 0 auto;
+      h4 {
+        font-size: 2.6em;
+        font-weight: bolder;
+        color: $heading-color;
+        font-family: $workSans;
+      }
+    }
+
+    .approach-card {
+      padding: 2rem;
+
+      border-radius: 0.6rem;
+      height: 29rem;
+
+      h5 {
+        font-size: 1.55em;
+      }
+
+      p {
+        font-size: 1.4em;
       }
     }
   }
@@ -27,40 +124,16 @@
     }
   }
 
-  .services {
-    padding: 4rem 0;
-
-    h2 {
-      font-size: 2em;
-      font-weight: bolder;
-    }
-  }
-
   footer {
-    h5 {
-      color: $white;
-    }
-
     .brand-name {
       font-size: 2.4em;
-      color: $white;
-
-      font-weight: bold;
-    }
-
-    .about {
-      color: $white;
     }
 
     .footer-anchor-link {
       a {
         display: block;
-        color: $white;
-        font-size: 0.95em;
+
         margin: 1rem 0 0 1rem;
-        &:hover {
-          color: $white;
-        }
       }
     }
 
@@ -76,7 +149,7 @@
     }
   }
 
-   .contact-page {
+  .contact-page {
     padding: 5rem 0;
 
     h1 {
@@ -106,11 +179,9 @@
       .progress-bar {
         @include flexItem(row, space-between);
 
-        // margin: 40px 0;
-
         .step {
           text-align: center;
-          // width: 100%;
+
           position: relative;
 
           .check {
@@ -133,9 +204,9 @@
             position: relative;
             height: 2.4rem;
             width: 2.4rem;
-            // border: 2px solid $black;
+
             border-radius: 50%;
-            // display: inline-block;
+
             background-color: #eff0f7;
 
             @include flexItem(row, center);
@@ -219,11 +290,20 @@
             width: 25%;
             transition: margin-left 0.3s ease-in-out;
 
-            // Second form field
+            .form-field-row {
+              @include flexItem(row, space-between);
+              padding-top: 0rem;
+
+              .form-field {
+                width: 48%;
+
+                @include flexItem(column, space-between);
+              }
+            }
 
             .second-form {
               width: 100%;
-              // background-color: red;
+
               @include flexItem(row, space-between);
 
               .form-item {
@@ -245,7 +325,6 @@
                   box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
                   border-radius: 16px;
 
-                  // Not necessary
                   &::before {
                     content: "";
                     position: absolute;
@@ -282,8 +361,6 @@
                     align-items: center;
 
                     transition: 0.3;
-
-                    // background-color: pink;
 
                     // .form-img {
                     // }
@@ -323,7 +400,7 @@
 
             .third-form {
               width: 100%;
-              // background-color: red;
+
               @include flexItem(row, space-between);
 
               .form-item {
@@ -345,7 +422,6 @@
                   box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
                   border-radius: 16px;
 
-                  // Not necessary
                   &::before {
                     content: "";
                     position: absolute;
@@ -422,79 +498,6 @@
               }
             }
 
-            .title {
-              font-size: 1.5em;
-              font-weight: bold;
-            }
-
-            .subtitle {
-              color: $text-color;
-              font-size: 1.1em;
-            }
-
-            .form-field-row {
-              @include flexItem(row, space-between);
-              padding-top: 0rem;
-
-              .form-field {
-                width: 48%;
-                // background-color: red;
-
-                @include flexItem(column, space-between);
-
-                .person {
-                  background: url("@/assets/images/person.svg");
-                  background-position: right;
-
-                  background-repeat: no-repeat;
-                }
-
-                .email {
-                  width: 100%;
-                  background: transparent url("@/assets/images/email.svg");
-                  background-position: right;
-
-                  background-repeat: no-repeat;
-                }
-
-                .phone {
-                  width: 100%;
-                  background: transparent url("@/assets/images/phone.svg");
-                  background-position: right;
-
-                  background-repeat: no-repeat;
-                }
-
-                .company {
-                  width: 100%;
-                  background: transparent url("@/assets/images/company.svg");
-                  background-position: right;
-
-                  background-repeat: no-repeat;
-                }
-
-                input {
-                  width: 100%;
-                  background: #ffffff;
-
-                  border: 1px solid #eff0f7;
-
-                  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-                  border-radius: 46px;
-                  padding: 1rem 1.3rem;
-                  position: relative;
-                }
-
-                // input.person {
-                //   text-align: end;
-                //   width: 100%;
-
-                //   background: transparent url("@/assets/images/person.svg")
-                //     no-repeat 13px center;
-                // }
-              }
-            }
-
             .first-page-next {
               @include flexItem(row, flex-end);
 
@@ -532,16 +535,12 @@
             }
 
             .submit-quote {
-              color: $heading-color;
               margin-top: 2rem;
-              font-weight: bold;
             }
 
             .submit-review {
               width: 98%;
               margin: 0 auto 3.8rem auto;
-              color: #6f6c90;
-              font-size: 1.1em;
             }
           }
         }

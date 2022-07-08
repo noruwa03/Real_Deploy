@@ -7,10 +7,10 @@
         <div class="text-center">
           <h1>
             Building The Next
-           <span>Unicorn</span>
+            <span>Unicorn</span>
             With You
           </h1>
-          
+
           <p>
             Your trusted partner in building sustainable products for the
             future. Be it blockchain developement, AI, web apps, UI/UX design or
@@ -18,7 +18,7 @@
           </p>
 
           <div class="mt-5">
-            <span class="anchor-link" @click="goto"> Get a free quote </span>
+            <a href="#contact" class="anchor-link"> Get a free quote </a>
           </div>
         </div>
       </div>
@@ -280,7 +280,7 @@
     <!-- End of Valuable Insight -->
 
     <!-- Contact Us -->
-    <div id="contact-us" class="contact-us">
+    <div id="contact" class="contact-us">
       <div class="container-lg">
         <h1 class="pb-4 text-center">Have a project! Let’s discuss</h1>
         <!-- <p>
@@ -296,14 +296,14 @@
                   <div class="input-data">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
-                    <label for="">Your company name</label>
+                    <label for="">Your Company Name</label>
                   </div>
                 </div>
-                <div class="first-row">
+                <div class="first-row" >
                   <div class="input-data">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
-                    <label for="">Nature of business</label>
+                    <label for="">Nature of Business</label>
                   </div>
                 </div>
                 <!-- <div class="form-row">
@@ -322,14 +322,14 @@
                   <div class="input-data">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
-                    <label for="">Contact name</label>
+                    <label for="">Contact Name</label>
                   </div>
                 </div>
                 <div class="first-row">
                   <div class="input-data">
                     <input type="text" name="" id="" required />
                     <div class="underline"></div>
-                    <label for="">Contact phone</label>
+                    <label for="">Contact Phone</label>
                   </div>
                 </div>
                 <div class="first-row">
@@ -384,7 +384,7 @@
             <div>Tanzania <span> 1 Morogoro Road, Dar Es Salaam </span></div>
 
             <h4 class="mt-5">For Quick Inquiries</h4>
-            <div>
+            <div class="contact-email">
               <img
                 src="@/assets/images/information.svg"
                 class="email-info me-1"
@@ -405,13 +405,15 @@
 <script>
 export default {
   setup() {
-    const goto = () => {
-      const el = document.querySelector("#contact");
-      el.scrollIntoView(false);
-    };
+    // const goto = () => {
+    //   const el = document.querySelector("#contact");
+    //   el.scrollIntoView(false);
+    // };
+
+
 
     return {
-      goto,
+  
     };
   },
 };

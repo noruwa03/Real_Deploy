@@ -1,8 +1,7 @@
 <template>
   <div>
-    <a class="logo-image" href="">
-      <img src="@/assets/images/logo.svg" alt="logo" />
-    </a>
+ 
+    <nuxt-link class="logo-image"  to="/"> <img src="@/assets/images/logo.svg" alt="logo" /></nuxt-link>
 
     <div id="menu-btn" @click="menuHandler">
       <span></span>
@@ -35,7 +34,7 @@
         </ul>
 
         <div class="get-free-quote">
-          <span class="anchor-link" @click="goto"> Get a free quote </span>
+          <a class="anchor-link" href="#contact"> Get a free quote </a>
  
         </div>
       </div>
@@ -61,11 +60,11 @@ export default {
       navIcon2.classList.toggle("open");
     }
 
-    const goto = () => {
-      const el = document.querySelector("#contact");
-      el.scrollIntoView(false);
+    // const goto = () => {
+    //   const el = document.querySelector("#contact");
+    //   el.scrollIntoView(false);
       
-    };
+    // };
 
     const removeSidebar = () => {
       const navIcon2 = document.querySelector("#menu-btn");
@@ -82,7 +81,7 @@ export default {
 
     
     return {
-      menuHandler, goto, removeSidebar, 
+      menuHandler, removeSidebar, 
     }
   },
 
