@@ -17,7 +17,7 @@
       width: 96%;
 
       h1 {
-        font-size: 1.6em;
+        font-size: 1.85em;
       }
 
       p {
@@ -204,37 +204,7 @@
     }
   }
 
-  footer {
-    padding-top: 3rem;
-    .brand-name {
-      font-size: 2.2em;
-    }
-
-    .about {
-      font-size: 1em;
-    }
-
-    .footer-anchor-link {
-      a {
-        display: block;
-
-        font-size: 0.95em;
-      }
-    }
-
-    .all-rights-reserved {
-      width: 100%;
-      margin-top: 1.5rem;
-      padding: 1rem 0;
-
-      p {
-        width: 95%;
-        margin: 0 auto;
-      }
-    }
-  }
-
-  .contact-page {
+   .contact-page {
     padding: 6rem 0;
 
     h1 {
@@ -247,7 +217,7 @@
       p {
         color: #6f6c90;
 
-        font-size: 1.1em;
+        font-size: 1.02em;
       }
     }
 
@@ -365,7 +335,7 @@
             }
 
             .subtitle {
-              font-size: 1.1em;
+              font-size: 1.02em;
             }
 
             .form-field-row {
@@ -422,7 +392,7 @@
 
                     top: 18px;
                     left: 18px;
-                    background-image: url("@/assets/images/check.svg");
+                    background-image: url("@/assets/icons/check.svg");
                     background-repeat: no-repeat;
                     transition: 0.3s;
                     opacity: 0;
@@ -439,7 +409,7 @@
                     // }
 
                     .form-name {
-                      font-size: 1.1em;
+                      font-size: 1.08em;
                     }
                   }
                 }
@@ -513,7 +483,7 @@
 
                     top: 3.08rem;
                     left: 2.401rem;
-                    background-image: url("@/assets/images/eclipse.svg");
+                    background-image: url("@/assets/icons/eclipse.svg");
                     background-repeat: no-repeat;
                     transition: 0.3s;
                     opacity: 0;
@@ -532,7 +502,7 @@
                     // }
 
                     .form-name {
-                      font-size: 1.1em;
+                      font-size: 1.08em;
                     }
                   }
                 }
@@ -608,11 +578,43 @@
               width: 96%;
               margin: 0 auto 3.8rem auto;
               color: #6f6c90;
-              font-size: 1.1em;
+              font-size: 1.08em;
             }
           }
         }
       }
     }
   }
+
+  footer {
+    padding-top: 3rem;
+    .brand-name {
+      font-size: 2.2em;
+    }
+
+    .about {
+      font-size: 1em;
+    }
+
+    .footer-anchor-link {
+      a {
+        display: block;
+
+        font-size: 0.95em;
+      }
+    }
+
+    .all-rights-reserved {
+      width: 100%;
+      margin-top: 1.5rem;
+      padding: 1rem 0;
+
+      p {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+ 
 }

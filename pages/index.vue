@@ -41,7 +41,7 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <div class="service-card my-2">
               <div class="text-center">
-                <img src="@/assets/images/web-app.svg" alt="" />
+                <img src="@/assets/icons/web-app.svg" alt="Web Application" />
                 <h3>Web Application</h3>
                 <p class="pb-5">
                   Our dedicated development team builds world class products and
@@ -53,7 +53,7 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <div class="service-card my-2">
               <div class="text-center">
-                <img src="@/assets/images/saas-app-dev.svg" alt="" />
+                <img src="@/assets/icons/saas-app-dev.svg" alt="SaaS App Development" />
                 <h3>SaaS App Development</h3>
                 <p>
                   we create custom SaaS solutions that are market ready,
@@ -66,7 +66,7 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <div class="service-card my-2">
               <div class="text-center">
-                <img src="@/assets/images/mobile-app-dev.svg" alt="" />
+                <img src="@/assets/icons/mobile-app-dev.svg" alt="Mobile App Development" />
                 <h3 class="pt-2">Mobile App Development</h3>
                 <p class="pb-5">
                   We build mobile apps that delight users, run smoothly, and
@@ -78,7 +78,7 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <div class="service-card my-2">
               <div class="text-center">
-                <img src="@/assets/images/block-dev.svg" alt="" />
+                <img src="@/assets/icons/block-dev.svg" alt="Blockchain Development" />
                 <h3>Blockchain Development</h3>
                 <p class="pb-4">
                   Blockchain is the future and our team has the reputation of
@@ -91,7 +91,7 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <div class="service-card my-2">
               <div class="text-center">
-                <img src="@/assets/images/ux-ui-design.svg" alt="" />
+                <img src="@/assets/icons/ux-ui-design.svg" alt="UX/UI Design" />
                 <h3>UX/UI Design</h3>
                 <p class="pb-4">
                   Our designers bring world class expertise to the table. Making
@@ -103,7 +103,7 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <div class="service-card my-2">
               <div class="text-center">
-                <img src="@/assets/images/data-science.svg" alt="" />
+                <img src="@/assets/icons/data-science.svg" alt="Data Science & AI Models" />
                 <h3>Data Science & AI Models</h3>
                 <p class="pb-4">
                   Our AI powered systems offers instant analysis of hundreds of
@@ -139,7 +139,7 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <div class="about-card my-2">
               <div class="text-center">
-                <img src="@/assets/images/cutting-edge-tech.svg" alt="" />
+                <img src="@/assets/icons/cutting-edge-tech.svg" alt="Cutting Edge Technology" />
                 <h3>Cutting Edge Technology</h3>
                 <p class="pb-5">
                   We utilize cutting edge solutions in our web design software
@@ -152,7 +152,7 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <div class="about-card my-2">
               <div class="text-center">
-                <img src="@/assets/images/cross-device-comp.svg" alt="" />
+                <img src="@/assets/icons/cross-device-comp.svg" alt="Cross Device Compatibility" />
                 <h3>Cross Device Compatibility</h3>
                 <p class="pb-3">
                   We implement projects end-to-end or augment your existing team
@@ -165,7 +165,7 @@
           <div class="col-lg-4 col-sm-6 col-12">
             <div class="about-card my-2">
               <div class="text-center">
-                <img src="@/assets/images/tailor-made-dev.svg" alt="" />
+                <img src="@/assets/icons/tailor-made-dev.svg" alt="Tailor Made Development" />
                 <h3>Tailor Made Development</h3>
                 <p class="pb-1">
                   We develop products from the idea stage using scalable and
@@ -192,9 +192,9 @@
         <div class="row align-items-center justify-content-between">
           <div class="col-12 mt-sm-5 mt-3">
             <img
-              src="@/assets/images/cover-image.jpg"
+              src="@/assets/icons/cover-image.jpg"
               class="img-fluid"
-              alt=""
+              alt="Cover Image"
             />
           </div>
         </div>
@@ -350,7 +350,7 @@
 
                 <div class="file-box">
                   <div>
-                    <img src="@/assets/images/upload.svg" class="me-3" alt="" />
+                    <img src="@/assets/icons/upload.svg" class="me-3" alt="Upload" />
                     <span>Upload Additional file</span>
                   </div>
                 </div>
@@ -386,11 +386,11 @@
             <h4 class="mt-5">For Quick Inquiries</h4>
             <div class="contact-email">
               <img
-                src="@/assets/images/information.svg"
+                src="@/assets/icons/information.svg"
                 class="email-info me-1"
-                alt=""
+                alt="Information"
               />
-              contact@ecolabz.io
+              <a href="mailto:contact@ecolabz.io">contact@ecolabz.io</a>
             </div>
           </div>
         </div>

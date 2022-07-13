@@ -59,7 +59,6 @@
     -moz-transition: 0.25s ease-in-out;
     -o-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
-    
   }
 
   #menu-btn span:nth-child(even) {
@@ -376,35 +375,6 @@
     }
   }
 
-  footer {
-    .brand-name {
-      font-size: 2.3em;
-    }
-
-    .about {
-      font-size: 1em;
-    }
-
-    .footer-anchor-link {
-      a {
-        display: block;
-
-        margin: 1rem 0;
-      }
-    }
-
-    .all-rights-reserved {
-      width: 100%;
-      margin-top: 1.5rem;
-      padding: 1rem 0;
-
-      p {
-        width: 97%;
-        margin: 0 auto;
-      }
-    }
-  }
-
   .contact-page {
     padding: 6rem 0;
 
@@ -608,7 +578,7 @@
 
                     top: 18px;
                     left: 18px;
-                    background-image: url("@/assets/images/check.svg");
+                    background-image: url("@/assets/icons/check.svg");
                     background-repeat: no-repeat;
                     transition: 0.3s;
                     opacity: 0;
@@ -706,7 +676,7 @@
 
                     top: 3.08rem;
                     left: 2.401rem;
-                    background-image: url("@/assets/images/eclipse.svg");
+                    background-image: url("@/assets/icons/eclipse.svg");
                     background-repeat: no-repeat;
                     transition: 0.3s;
                     opacity: 0;
@@ -807,6 +777,35 @@
             }
           }
         }
+      }
+    }
+  }
+
+  footer {
+    .brand-name {
+      font-size: 2.3em;
+    }
+
+    .about {
+      font-size: 1em;
+    }
+
+    .footer-anchor-link {
+      a {
+        display: block;
+
+        margin: 1rem 0;
+      }
+    }
+
+    .all-rights-reserved {
+      width: 100%;
+      margin-top: 1.5rem;
+      padding: 1rem 0;
+
+      p {
+        width: 97%;
+        margin: 0 auto;
       }
     }
   }

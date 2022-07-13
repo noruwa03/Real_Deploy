@@ -8,9 +8,10 @@ Table Of Contents:
 - General Styles
 - Services
 - About Us
+- Latest News
 - Our Approach
-- Insight
 - Contact Us
+- Contact Page
 - Footer
 - Media Queries
 ******************************************/
@@ -294,7 +295,7 @@ header .container .anchor-link {
 }
 
 /**********************/
-/*       Latest News      */
+/*     Latest News    */
 /**********************/
 .latest-news {
   padding: 5rem 0;
@@ -648,52 +649,9 @@ header .container .anchor-link {
   font-size: 1.3em;
 }
 
-footer {
-  padding-top: 5rem;
-  background-color: #0B0706;
-}
-
-footer h5 {
-  color: #fff;
-  font-family: "WorkSans";
-}
-
-footer .brand-name {
-  font-size: 2.4em;
-  color: #fff;
-  font-weight: bold;
-  font-family: "WorkSans";
-}
-
-footer .about {
-  color: #fff;
-  font-size: 1.14em;
-}
-
-footer .footer-anchor-link a {
-  display: block;
-  color: #fff;
-  font-size: 0.95em;
-  margin: 1rem 0 0 1rem;
-  font-family: "WorkSans";
-}
-
-footer .footer-anchor-link a:hover {
-  color: #fff;
-}
-
-footer .all-rights-reserved {
-  width: 100%;
-  margin-top: 1.5rem;
-  padding: 1rem 0;
-  background-color: #fff;
-}
-
-footer .all-rights-reserved p {
-  width: 86%;
-  margin: 0 auto;
-}
-
+/**********************/
+/*    Contact Page    */
+/**********************/
 .contact-page {
   padding: 5rem 0;
   background-color: #FAFAFB;
@@ -929,28 +887,28 @@ footer .all-rights-reserved p {
 }
 
 .contact-page .contact-card .form-outer form .page .form-field-row .form-field .person {
-  background: url("@/assets/images/person.svg");
+  background: url("@/assets/icons/person.svg");
   background-position: right 18px top 10px;
   background-repeat: no-repeat;
 }
 
 .contact-page .contact-card .form-outer form .page .form-field-row .form-field .email {
   width: 100%;
-  background: url("@/assets/images/email.svg");
+  background: url("@/assets/icons/email.svg");
   background-position: right 15px top 20px;
   background-repeat: no-repeat;
 }
 
 .contact-page .contact-card .form-outer form .page .form-field-row .form-field .phone {
   width: 100%;
-  background: url("@/assets/images/phone.svg");
+  background: url("@/assets/icons/phone.svg");
   background-position: right 18px top 15px;
   background-repeat: no-repeat;
 }
 
 .contact-page .contact-card .form-outer form .page .form-field-row .form-field .company {
   width: 100%;
-  background: url("@/assets/images/company.svg");
+  background: url("@/assets/icons/company.svg");
   background-position: right 18px top 10px;
   background-repeat: no-repeat;
 }
@@ -1036,7 +994,7 @@ footer .all-rights-reserved p {
   height: 20px;
   top: 18px;
   left: 18px;
-  background-image: url("@/assets/images/check.svg");
+  background-image: url("@/assets/icons/check.svg");
   background-repeat: no-repeat;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1165,7 +1123,7 @@ footer .all-rights-reserved p {
   height: 20px;
   top: 3.08rem;
   left: 2.401rem;
-  background-image: url("@/assets/images/eclipse.svg");
+  background-image: url("@/assets/icons/eclipse.svg");
   background-repeat: no-repeat;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1308,6 +1266,55 @@ footer .all-rights-reserved p {
   margin: 0 auto 3.8rem auto;
   color: #6f6c90;
   font-size: 1.3em;
+}
+
+/**********************/
+/*        Footer      */
+/**********************/
+footer {
+  padding-top: 5rem;
+  background-color: #0B0706;
+}
+
+footer h5 {
+  color: #fff;
+  font-family: "WorkSans";
+}
+
+footer .brand-name {
+  font-size: 2.4em;
+  color: #fff;
+  font-weight: bold;
+  font-family: "WorkSans";
+}
+
+footer .about {
+  color: #fff;
+  font-size: 1.14em;
+}
+
+footer .footer-anchor-link a {
+  display: block;
+  color: #fff;
+  font-size: 0.95em;
+  margin: 1rem 0 0 1rem;
+  font-family: "WorkSans";
+}
+
+footer .footer-anchor-link a:hover {
+  color: #fff;
+}
+
+footer .all-rights-reserved {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  background-color: #fff;
+}
+
+footer .all-rights-reserved p {
+  width: 86%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1684,7 +1691,7 @@ footer .all-rights-reserved p {
     height: 20px;
     top: 18px;
     left: 18px;
-    background-image: url("@/assets/images/check.svg");
+    background-image: url("@/assets/icons/check.svg");
     background-repeat: no-repeat;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -1801,7 +1808,7 @@ footer .all-rights-reserved p {
     height: 20px;
     top: 3.08rem;
     left: 2.401rem;
-    background-image: url("@/assets/images/eclipse.svg");
+    background-image: url("@/assets/icons/eclipse.svg");
     background-repeat: no-repeat;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -2211,25 +2218,6 @@ footer .all-rights-reserved p {
   .contact-us .row-item .address .contact-email {
     font-size: 1.1em;
   }
-  footer .brand-name {
-    font-size: 2.3em;
-  }
-  footer .about {
-    font-size: 1em;
-  }
-  footer .footer-anchor-link a {
-    display: block;
-    margin: 1rem 0;
-  }
-  footer .all-rights-reserved {
-    width: 100%;
-    margin-top: 1.5rem;
-    padding: 1rem 0;
-  }
-  footer .all-rights-reserved p {
-    width: 97%;
-    margin: 0 auto;
-  }
   .contact-page {
     padding: 6rem 0;
   }
@@ -2492,7 +2480,7 @@ footer .all-rights-reserved p {
     height: 20px;
     top: 18px;
     left: 18px;
-    background-image: url("@/assets/images/check.svg");
+    background-image: url("@/assets/icons/check.svg");
     background-repeat: no-repeat;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -2609,7 +2597,7 @@ footer .all-rights-reserved p {
     height: 20px;
     top: 3.08rem;
     left: 2.401rem;
-    background-image: url("@/assets/images/eclipse.svg");
+    background-image: url("@/assets/icons/eclipse.svg");
     background-repeat: no-repeat;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -2731,9 +2719,40 @@ footer .all-rights-reserved p {
     color: #6f6c90;
     font-size: 1.1em;
   }
+  footer .brand-name {
+    font-size: 2.3em;
+  }
+  footer .about {
+    font-size: 1em;
+  }
+  footer .footer-anchor-link a {
+    display: block;
+    margin: 1rem 0;
+  }
+  footer .all-rights-reserved {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+  }
+  footer .all-rights-reserved p {
+    width: 97%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .logo-image {
+    display: block;
+    position: fixed;
+    top: 1.8%;
+    left: 3%;
+  }
+  .logo-image img {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .logo-image {
     display: block;
     position: fixed;
@@ -2868,26 +2887,6 @@ footer .all-rights-reserved p {
   }
   .contact-us .row-item .address .contact-email {
     font-size: 1.1em;
-  }
-  footer .brand-name {
-    font-size: 2.3em;
-  }
-  footer .about {
-    font-size: 1em;
-  }
-  footer .footer-anchor-link a {
-    display: block;
-    font-size: 0.95em;
-    margin: 1rem 0;
-  }
-  footer .all-rights-reserved {
-    width: 100%;
-    margin-top: 1.5rem;
-    padding: 1rem 0;
-  }
-  footer .all-rights-reserved p {
-    width: 97%;
-    margin: 0 auto;
   }
   .contact-page {
     padding: 6rem 0;
@@ -3145,7 +3144,7 @@ footer .all-rights-reserved p {
     height: 20px;
     top: 18px;
     left: 18px;
-    background-image: url("@/assets/images/check.svg");
+    background-image: url("@/assets/icons/check.svg");
     background-repeat: no-repeat;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -3262,7 +3261,7 @@ footer .all-rights-reserved p {
     height: 20px;
     top: 3.08rem;
     left: 2.401rem;
-    background-image: url("@/assets/images/eclipse.svg");
+    background-image: url("@/assets/icons/eclipse.svg");
     background-repeat: no-repeat;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -3383,6 +3382,26 @@ footer .all-rights-reserved p {
     color: #6f6c90;
     font-size: 1.1em;
   }
+  footer .brand-name {
+    font-size: 2.3em;
+  }
+  footer .about {
+    font-size: 1em;
+  }
+  footer .footer-anchor-link a {
+    display: block;
+    font-size: 0.95em;
+    margin: 1rem 0;
+  }
+  footer .all-rights-reserved {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+  }
+  footer .all-rights-reserved p {
+    width: 97%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -3401,7 +3420,7 @@ footer .all-rights-reserved p {
     width: 96%;
   }
   header .container h1 {
-    font-size: 1.6em;
+    font-size: 1.85em;
   }
   header .container p {
     margin-top: 1.2rem;
@@ -3524,28 +3543,6 @@ footer .all-rights-reserved p {
   .contact-us .row-item .address .contact-email {
     font-size: 1.1em;
   }
-  footer {
-    padding-top: 3rem;
-  }
-  footer .brand-name {
-    font-size: 2.2em;
-  }
-  footer .about {
-    font-size: 1em;
-  }
-  footer .footer-anchor-link a {
-    display: block;
-    font-size: 0.95em;
-  }
-  footer .all-rights-reserved {
-    width: 100%;
-    margin-top: 1.5rem;
-    padding: 1rem 0;
-  }
-  footer .all-rights-reserved p {
-    width: 95%;
-    margin: 0 auto;
-  }
   .contact-page {
     padding: 6rem 0;
   }
@@ -3558,7 +3555,7 @@ footer .all-rights-reserved p {
   }
   .contact-page .box p {
     color: #6f6c90;
-    font-size: 1.1em;
+    font-size: 1.02em;
   }
   .contact-page .contact-card {
     width: 96%;
@@ -3696,7 +3693,7 @@ footer .all-rights-reserved p {
     font-size: 1.4em;
   }
   .contact-page .contact-card .form-outer form .page .subtitle {
-    font-size: 1.1em;
+    font-size: 1.02em;
   }
   .contact-page .contact-card .form-outer form .page .form-field-row {
     display: -webkit-box;
@@ -3792,7 +3789,7 @@ footer .all-rights-reserved p {
     height: 20px;
     top: 18px;
     left: 18px;
-    background-image: url("@/assets/images/check.svg");
+    background-image: url("@/assets/icons/check.svg");
     background-repeat: no-repeat;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -3822,7 +3819,7 @@ footer .all-rights-reserved p {
     transition: 0.3;
   }
   .contact-page .contact-card .form-outer form .page .second-form .form-item .form-label .form-content .form-name {
-    font-size: 1.1em;
+    font-size: 1.08em;
   }
   .contact-page .contact-card .form-outer form .page .second-form .form-item .form-input {
     position: absolute;
@@ -3901,7 +3898,7 @@ footer .all-rights-reserved p {
     height: 20px;
     top: 3.08rem;
     left: 2.401rem;
-    background-image: url("@/assets/images/eclipse.svg");
+    background-image: url("@/assets/icons/eclipse.svg");
     background-repeat: no-repeat;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -3932,7 +3929,7 @@ footer .all-rights-reserved p {
     padding: 1.4rem 0;
   }
   .contact-page .contact-card .form-outer form .page .third-form .form-item .form-label .form-content .form-name {
-    font-size: 1.1em;
+    font-size: 1.08em;
   }
   .contact-page .contact-card .form-outer form .page .third-form .form-item .form-input {
     position: absolute;
@@ -4019,7 +4016,29 @@ footer .all-rights-reserved p {
     width: 96%;
     margin: 0 auto 3.8rem auto;
     color: #6f6c90;
-    font-size: 1.1em;
+    font-size: 1.08em;
+  }
+  footer {
+    padding-top: 3rem;
+  }
+  footer .brand-name {
+    font-size: 2.2em;
+  }
+  footer .about {
+    font-size: 1em;
+  }
+  footer .footer-anchor-link a {
+    display: block;
+    font-size: 0.95em;
+  }
+  footer .all-rights-reserved {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+  }
+  footer .all-rights-reserved p {
+    width: 95%;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */

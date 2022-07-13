@@ -1,8 +1,10 @@
 <template>
   <div>
+
+    <!-- Mobile box-shadow style -->
     <div class="menu-card"></div>
     <nuxt-link class="logo-image" to="/">
-      <img src="@/assets/images/logo.svg" alt="logo"
+      <img src="@/assets/icons/logo.svg" alt="logo"
     /></nuxt-link>
     <div id="menu-btn" @click="menuHandler">
       <span></span>
@@ -19,13 +21,13 @@
         <!-- Logo -->
 
         <nuxt-link class="navbar-brand logo-image" to="/"
-          ><img src="@/assets/images/logo.svg" alt="logo"
+          ><img src="@/assets/icons/logo.svg" alt="logo"
         /></nuxt-link>
         <!-- End of Logo -->
 
         <ul class="nav-item-list">
           <li @click="removeSidebar" class="nav-item">
-            <a class="nav-link" href="#about-us">About</a>
+            <a class="nav-link" href="http://localhost:3000/#about-us">About</a>
           </li>
 
           <li @click="removeSidebar" class="nav-item">

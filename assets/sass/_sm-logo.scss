@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+    .logo-image {
+    display: block;
+
+    position: fixed;
+    top: 1.8%;
+    left: 3%;
+
+    img {
+      width: 8rem;
+    }
+  }
+}

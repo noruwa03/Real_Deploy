@@ -9,9 +9,10 @@ Table Of Contents:
 - General Styles
 - Services
 - About Us
+- Latest News
 - Our Approach
-- Insight
 - Contact Us
+- Contact Page
 - Footer
 - Media Queries
 ******************************************/
@@ -247,7 +248,7 @@ header {
 }
 
 /**********************/
-/*       Latest News      */
+/*     Latest News    */
 /**********************/
 .latest-news {
   padding: 5rem 0;
@@ -531,98 +532,9 @@ header {
   }
 }
 
-// footer {
-//   padding: 5rem 0;
-//   background-color: $black;
-
-//   h5 {
-//     color: $white;
-//   }
-
-//   a {
-//     display: block;
-//     color: $text-color;
-//     font-size: 0.95em;
-//     margin: 1rem 0;
-//     &:hover {
-//       color: $white;
-//     }
-//   }
-
-//   .subscribe {
-//     font-size: 2.4em;
-//     color: $white;
-//     width: 70%;
-//     font-weight: bold;
-//   }
-
-//   input {
-//     width: 70%;
-//     padding: 0.7rem 1rem;
-//     border: 1px solid rgba(235, 240, 249, 0.3);
-//     border-radius: 4px;
-//     background-color: $black;
-//     color: $white;
-//   }
-
-//   button {
-//     padding: 0.8rem 1rem;
-//     width: 26%;
-//     border: none;
-//     backdrop-filter: blur(80px);
-//     /* Note: backdrop-filter has minimal browser support */
-
-//     border-radius: 0 4px 4px 0;
-//   }
-// }
-
-footer {
-  padding-top: 5rem;
-  background-color: $black;
-
-  h5 {
-    color: $white;
-    font-family: $workSans;
-  }
-
-  .brand-name {
-    font-size: 2.4em;
-    color: $white;
-
-    font-weight: bold;
-    font-family: $workSans;
-  }
-
-  .about {
-    color: $white;
-    font-size: 1.14em;
-  }
-
-  .footer-anchor-link {
-    a {
-      display: block;
-      color: $white;
-      font-size: 0.95em;
-      margin: 1rem 0 0 1rem;
-      font-family: $workSans;
-      &:hover {
-        color: $white;
-      }
-    }
-  }
-
-  .all-rights-reserved {
-    width: 100%;
-    margin-top: 1.5rem;
-    padding: 1rem 0;
-    background-color: $white;
-    p {
-      width: 86%;
-      margin: 0 auto;
-    }
-  }
-}
-
+/**********************/
+/*    Contact Page    */
+/**********************/
 .contact-page {
   padding: 5rem 0;
   background-color: $gray;
@@ -788,7 +700,7 @@ footer {
               @include flexItem(column, space-between);
 
               .person {
-                background: url("@/assets/images/person.svg");
+                background: url("@/assets/icons/person.svg");
                 background-position: right 18px top 10px;
 
                 background-repeat: no-repeat;
@@ -796,7 +708,7 @@ footer {
 
               .email {
                 width: 100%;
-                background: url("@/assets/images/email.svg");
+                background: url("@/assets/icons/email.svg");
                 background-position: right 15px top 20px;
 
                 background-repeat: no-repeat;
@@ -804,7 +716,7 @@ footer {
 
               .phone {
                 width: 100%;
-                background: url("@/assets/images/phone.svg");
+                background: url("@/assets/icons/phone.svg");
                 background-position: right 18px top 15px;
 
                 background-repeat: no-repeat;
@@ -812,7 +724,7 @@ footer {
 
               .company {
                 width: 100%;
-                background: url("@/assets/images/company.svg");
+                background: url("@/assets/icons/company.svg");
                 background-position: right 18px top 10px;
 
                 background-repeat: no-repeat;
@@ -881,7 +793,7 @@ footer {
 
                   top: 18px;
                   left: 18px;
-                  background-image: url("@/assets/images/check.svg");
+                  background-image: url("@/assets/icons/check.svg");
                   background-repeat: no-repeat;
                   transition: 0.3s;
                   opacity: 0;
@@ -979,7 +891,7 @@ footer {
 
                   top: 3.08rem;
                   left: 2.401rem;
-                  background-image: url("@/assets/images/eclipse.svg");
+                  background-image: url("@/assets/icons/eclipse.svg");
                   background-repeat: no-repeat;
                   transition: 0.3s;
                   opacity: 0;
@@ -1089,7 +1001,61 @@ footer {
   }
 }
 
+
+/**********************/
+/*        Footer      */
+/**********************/
+footer {
+  padding-top: 5rem;
+  background-color: $black;
+
+  h5 {
+    color: $white;
+    font-family: $workSans;
+  }
+
+  .brand-name {
+    font-size: 2.4em;
+    color: $white;
+
+    font-weight: bold;
+    font-family: $workSans;
+  }
+
+  .about {
+    color: $white;
+    font-size: 1.14em;
+  }
+
+  .footer-anchor-link {
+    a {
+      display: block;
+      color: $white;
+      font-size: 0.95em;
+      margin: 1rem 0 0 1rem;
+      font-family: $workSans;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .all-rights-reserved {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+    background-color: $white;
+    p {
+      width: 86%;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
 @import "xlg";
 @import "lg";
+@import "sm-logo";
 @import "sm";
 @import "mobile";

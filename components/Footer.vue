@@ -60,16 +60,16 @@
             </div>
             <div class="col-12 mt-2 mb-5">
               <a href="" class="me-3">
-                <img src="@/assets/images/discord.svg" alt="">
+                <img src="@/assets/icons/discord.svg" alt="Discord">
               </a>
               <a href="" class="me-3">
-                <img src="@/assets/images/instagram.svg" alt="">
+                <img src="@/assets/icons/instagram.svg" alt="Instagram">
               </a>
               <a href="" class="me-3">
-                <img src="@/assets/images/meta.svg" alt="">
+                <img src="@/assets/icons/meta.svg" alt="Meta">
               </a>
               <a href="">
-                <img src="@/assets/images/twitter.svg" alt="">
+                <img src="@/assets/icons/twitter.svg" alt="Twitter">
               </a>
             </div>
           </div>
