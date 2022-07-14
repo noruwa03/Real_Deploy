@@ -1970,7 +1970,7 @@ footer .all-rights-reserved p {
     display: block;
     position: absolute;
     height: 3px;
-    width: 49%;
+    width: 50%;
     background: #0A0A0A;
     opacity: 1;
     -webkit-transform: rotate(0deg);
@@ -2038,6 +2038,15 @@ footer .all-rights-reserved p {
   nav.active {
     display: block;
   }
+  nav.active .nav-item-container .navbar-brand {
+    position: fixed;
+    top: 3.5%;
+    left: 3%;
+    z-index: 80;
+  }
+  nav.active .nav-item-container .navbar-brand img {
+    width: 8rem;
+  }
   nav.active .nav-item-container .nav-item-list.active {
     -webkit-transform: translateY(0rem);
             transform: translateY(0rem);
@@ -2065,7 +2074,7 @@ footer .all-rights-reserved p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    z-index: 50;
+    z-index: 70;
     padding: 0;
     margin: 0;
   }
@@ -3401,7 +3410,7 @@ footer .all-rights-reserved p {
     left: 3%;
   }
   .logo-image img {
-    width: 7rem;
+    width: 7.5rem;
   }
   header {
     margin-top: 4rem;
