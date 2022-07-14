@@ -5,7 +5,7 @@
     position: fixed;
     top: 1.36%;
     left: 3%;
-    z-index: 55;
+    z-index: 60;
 
     img {
       width: 8rem;
@@ -22,15 +22,17 @@
     left: 0%;
     width: 100%;
     z-index: 40;
+ 
   }
 
   #menu-btn {
     position: fixed;
-    top: 1rem;
+    top: 1.8rem;
     right: 1rem;
 
-    width: 60px;
+    width: 40px;
     height: 40px;
+    // background-color: red;
 
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -47,8 +49,8 @@
   #menu-btn span {
     display: block;
     position: absolute;
-    height: 4px;
-    width: 50%;
+    height: 3px;
+    width: 49%;
     background: $heading-color;
     opacity: 1;
     -webkit-transform: rotate(0deg);
@@ -78,12 +80,12 @@
 
   #menu-btn span:nth-child(3),
   #menu-btn span:nth-child(4) {
-    top: 18px;
+    top: 10px;
   }
 
   #menu-btn span:nth-child(5),
   #menu-btn span:nth-child(6) {
-    top: 36px;
+    top: 20px;
   }
 
   #menu-btn.open span:nth-child(1),
@@ -103,12 +105,12 @@
   }
 
   #menu-btn.open span:nth-child(1) {
-    left: 5px;
+    left: 7px;
     top: 7px;
   }
 
   #menu-btn.open span:nth-child(2) {
-    left: calc(50% - 5px);
+    left: calc(50% - 0px);
     top: 7px;
   }
 
@@ -123,13 +125,13 @@
   }
 
   #menu-btn.open span:nth-child(5) {
-    left: 5px;
-    top: 29px;
+    left: 7px;
+    top: 20px;
   }
 
   #menu-btn.open span:nth-child(6) {
-    left: calc(50% - 5px);
-    top: 29px;
+    left: calc(50% - 0px);
+    top: 20px;
   }
 
   nav {
@@ -139,17 +141,17 @@
       display: block;
 
       .nav-item-container {
-        .navbar-brand {
-          position: fixed;
-          top: 2.2%;
-          left: 3%;
+        // .navbar-brand {
+        //   position: fixed;
+        //   top: 2.2%;
+        //   left: 3%;
 
-          z-index: 60;
+        //   z-index: 60;
 
-          img {
-            width: 8rem;
-          }
-        }
+        //   img {
+        //     width: 8rem;
+        //   }
+        // }
 
         .nav-item-list.active {
           transform: translateY(0rem);
