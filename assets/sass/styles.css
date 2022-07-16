@@ -225,7 +225,7 @@ header .container .anchor-link {
   font-size: 2.5em;
   font-weight: bolder;
   color: #0A0A0A;
-  font-family: "WorkSans";
+  font-family: "GeneralSans";
 }
 
 .services .container-lg .service-card {
@@ -262,7 +262,7 @@ header .container .anchor-link {
   font-size: 2.5em;
   font-weight: bolder;
   color: #0A0A0A;
-  font-family: "WorkSans";
+  font-family: "GeneralSans";
 }
 
 .about-us-desc {
@@ -306,7 +306,7 @@ header .container .anchor-link {
   font-size: 2.6em;
   font-weight: bolder;
   color: #0A0A0A;
-  font-family: "WorkSans";
+  font-family: "GeneralSans";
 }
 
 .latest-news p {
@@ -331,7 +331,7 @@ header .container .anchor-link {
   font-size: 2.6em;
   font-weight: bolder;
   color: #0A0A0A;
-  font-family: "WorkSans";
+  font-family: "GeneralSans";
 }
 
 .our-approach .approach-card {
@@ -365,7 +365,7 @@ header .container .anchor-link {
 .contact-us h1 {
   font-size: 2.8em;
   font-weight: bolder;
-  font-family: "WorkSans";
+  font-family: "GeneralSans";
 }
 
 .contact-us p {
@@ -660,7 +660,7 @@ header .container .anchor-link {
 
 .contact-page h1 {
   font-weight: bolder;
-  font-family: "WorkSans";
+  font-family: "GeneralSans";
 }
 
 .contact-page .box {

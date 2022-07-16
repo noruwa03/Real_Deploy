@@ -100,15 +100,11 @@
            
            
             <div class="col-12">
-              <a href="" class="me-3">
-                <img src="@/assets/icons/discord.svg" alt="Discord" />
-              </a>
-              <a href="" class="me-3">
+              
+              <a href="" class="me-4">
                 <img src="@/assets/icons/instagram.svg" alt="Instagram" />
               </a>
-              <a href="" class="me-3">
-                <img src="@/assets/icons/meta.svg" alt="Meta" />
-              </a>
+             
               <a href="">
                 <img src="@/assets/icons/twitter.svg" alt="Twitter" />
               </a>
