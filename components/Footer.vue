@@ -1,54 +1,6 @@
 <template>
   <footer>
     <!-- <div class="container-lg">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-lg-6 col-12">
-          <div
-            class="
-              row
-              align-items-center
-              justify-content-between justify-content-sm-center
-            "
-          >
-            <div class="col-lg-3 col-sm-3 col-6 my-3">
-              <h5>Our team</h5>
-              <a href="">About us</a>
-              <a href="">What we do</a>
-              <a href="">Careers</a>
-              <a href="">Press</a>
-            </div>
-            <div class="col-lg-3 col-sm-3 col-6 my-3">
-              <h5>More</h5>
-              <a href="">Solutions</a>
-              <a href="">Blog</a>
-              <a href="">Privacy Policy</a>
-              <a href="">Terms & Conditions</a>
-            </div>
-            <div class="col-lg-3 col-sm-3 col-6 my-3">
-              <h5>Connect</h5>
-              <a href="">Facebook</a>
-              <a href="">LinkedIn</a>
-              <a href="">Twitter</a> 
-              <a href="">Instagram</a>                    
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-12">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-12">
-              <div class="subscribe">Subscribe to get latest updates</div>
-            </div>
-            <div class="col-12 mt-3">
-              <input type="text" />
-              <button>Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-
-    <div class="container-lg">
       <div class="row align-items-start justify-content-between">
         <div class="col-lg-5 col-12">
           <div class="row align-items-center justify-content-between">
@@ -107,9 +59,69 @@
         </div>
         
       </div>
+    </div> -->
+
+    <div class="container-lg">
+    
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-4 col-12 address">
+          <h4>Offices</h4>
+            <div>
+              United States <span> 30 N Gould St R, Sheridan, WY 82801 </span>
+            </div>
+            <div>
+              Nigeria
+              <span> 17 Ozo Ocheoha Street Independence Layout Enugu </span>
+            </div>
+
+            <div>Tanzania <span> 1 Morogoro Road, Dar Es Salaam </span></div>
+
+            
+        </div>
+
+        <div class="col-lg-4 col-12 text-center">
+         <div class="footer-logo">
+           <img src="@/assets/icons/logo.svg" alt="logo"
+        />
+         </div>
+           <div class="contact-email">
+              <!-- <img
+                src="@/assets/icons/information.svg"
+                class="email-info me-1"
+                alt="Information"
+              /> -->
+              <a href="mailto:contact@ecolabz.io">contact@ecolabz.io</a>
+            </div>
+          
+        </div>
+
+        <div class="col-lg-4 col-12 text-center text-sm-end">
+          <div class="row align-items-center justify-content-between">
+           
+           
+            <div class="col-12">
+              <a href="" class="me-3">
+                <img src="@/assets/icons/discord.svg" alt="Discord" />
+              </a>
+              <a href="" class="me-3">
+                <img src="@/assets/icons/instagram.svg" alt="Instagram" />
+              </a>
+              <a href="" class="me-3">
+                <img src="@/assets/icons/meta.svg" alt="Meta" />
+              </a>
+              <a href="">
+                <img src="@/assets/icons/twitter.svg" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+       
+        
+      </div>
     </div>
     <div class="all-rights-reserved">
-      <p>{{footerDate}} All Rights Reserved</p>
+      <p>{{ footerDate }} All Rights Reserved</p>
     </div>
   </footer>
 </template>
@@ -118,8 +130,8 @@
 export default {
   setup() {
     const footerDate = new Date().getFullYear();
-    return {footerDate}
-  }
+    return { footerDate };
+  },
 };
 </script>
 

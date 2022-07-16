@@ -280,13 +280,10 @@
     <!-- End of Valuable Insight -->
 
     <!-- Contact Us -->
-    <div id="contact" class="contact-us">
+    <!-- <div id="contact" class="contact-us">
       <div class="container-lg">
         <h1 class="pb-4 text-center">Have a project! Let’s discuss</h1>
-        <!-- <p>
-          Need an experienced and skilled hand with custom IT projects?
-          <span>Fill out the form to get a free consultation.</span>
-        </p> -->
+
 
         <div class="row-item">
           <div class="contact-form">
@@ -306,18 +303,7 @@
                     <label for="">Nature of Business</label>
                   </div>
                 </div>
-                <!-- <div class="form-row">
-                  <div class="address">
-                    <input type="text" name="" id="" required />
-                    <div class="underline"></div>
-                    <label for="">Address</label>
-                  </div>
-                  <div class="post-code">
-                    <input type="text" name="" id="" required />
-                    <div class="underline"></div>
-                    <label for="">Post code</label>
-                  </div>
-                </div> -->
+     
                 <div class="first-row">
                   <div class="input-data">
                     <input type="text" name="" id="" required />
@@ -365,7 +351,7 @@
                     ><input type="checkbox" class="me-1" /> I want to protect my
                     data by signing an NDA</span
                   >
-                  <!-- <span class="nda"></span> -->
+                  
                 </div>
               </form>
             </div>
@@ -395,9 +381,11 @@
           </div>
         </div>
       </div>
-    </div>
-
+    </div> -->
     <!-- End of Contact Us -->
+    <Faq/>
+
+    
     <Footer />
   </div>
 </template>

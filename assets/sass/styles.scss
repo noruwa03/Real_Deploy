@@ -132,11 +132,11 @@ header {
       font-size: 3.5em;
       font-weight: bolder;
       color: $heading-color;
-      font-family: $workSans;
+      font-family: $generalSans;
 
       span {
         color: $green;
-        font-family: $workSans;
+        font-family: $generalSans;
       }
     }
 
@@ -144,6 +144,7 @@ header {
       margin-top: 2rem;
       font-size: 1.5em;
       color: $text-color;
+      font-family: $generalSans;
     }
 
     .anchor-link {
@@ -1001,6 +1002,125 @@ header {
   }
 }
 
+/* FAQ */
+
+.faq-section {
+  padding: 5rem 0;
+
+  .title {
+
+    font-family: $workSans;
+    font-weight: bolder;
+  }
+
+  .faq-card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0.5rem;
+
+    .faq {
+      .divider {
+        width: 100%;
+        height: 1px;
+        background-color: #d9dbe9;
+        margin: 0.5rem 0;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+
+      // Layout
+      .row {
+        display: flex;
+
+        .col {
+          flex: 1;
+        }
+      }
+
+      /* Accordion styles */
+      .tabs {
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .tab {
+        width: 100%;
+        color: white;
+        overflow: hidden;
+
+        &-label {
+          display: flex;
+          justify-content: space-between;
+          padding: 1em;
+          background: $white;
+          font-weight: normal;
+          cursor: pointer;
+          color: $black;
+          font-weight: bold;
+          font-family: $generalSans;
+
+          /* Icon */
+          // &:hover {
+          //   background: darken($white, 10%);
+          // }
+
+          &::after {
+            content: "\002B";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transition: all 0.35s;
+          }
+        }
+
+        &-content {
+          max-height: 0;
+          padding: 0 1em;
+          color: #6f6c90;
+
+          transition: all 0.35s;
+          font-family: $dmSans;
+        }
+
+        &-close {
+          display: flex;
+          justify-content: flex-end;
+          padding: 1em;
+          font-size: 0.75em;
+          background: $green;
+          cursor: pointer;
+
+          &:hover {
+            background: darken($green, 10%);
+          }
+        }
+      }
+
+      // :checked
+      input:checked {
+        + .tab-label {
+          color: $green;
+
+          &::after {
+            content: "\2212";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transition: all 0.35s;
+            color: $green;
+          }
+        }
+
+        ~ .tab-content {
+          max-height: 100vh;
+          padding: 1em;
+        }
+      }
+    }
+  }
+}
 
 /**********************/
 /*        Footer      */
@@ -1009,50 +1129,60 @@ footer {
   padding-top: 5rem;
   background-color: $black;
 
-  h5 {
-    color: $white;
-    font-family: $workSans;
-  }
-
-  .brand-name {
-    font-size: 2.4em;
+  .address {
     color: $white;
 
-    font-weight: bold;
-    font-family: $workSans;
-  }
-
-  .about {
-    color: $white;
-    font-size: 1.14em;
-  }
-
-  .footer-anchor-link {
-    a {
-      display: block;
-      color: $white;
-      font-size: 0.95em;
-      margin: 1rem 0 0 1rem;
+    div {
+      margin: 1rem 0;
       font-family: $workSans;
-      &:hover {
-        color: $white;
-      }
+      color: #e5e5e5;
     }
+
+    
   }
+
+  // .footer-logo {
+    
+  //   img {
+        
+  //       filter: invert(100);
+
+       
+  //     }
+  // }
+
+  .contact-email {
+    margin: 2rem 0;
+      
+      
+
+       a {
+       
+          color:  #e5e5e5;
+          font-family: $workSans;
+          padding: 1rem;
+          border-radius: 1.3rem;
+          background-color: #191919;
+        }
+    }
+
+
+
 
   .all-rights-reserved {
     width: 100%;
     margin-top: 1.5rem;
     padding: 1rem 0;
-    background-color: $white;
+    background-color: $black;
     p {
       width: 86%;
+      font-size: 1em;
+      font-family: $workSans;
       margin: 0 auto;
+      color:#e5e5e5;;
     }
   }
 }
-
-
 
 @import "xlg";
 @import "lg";

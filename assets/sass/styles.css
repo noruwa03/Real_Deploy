@@ -189,18 +189,19 @@ header .container h1 {
   font-size: 3.5em;
   font-weight: bolder;
   color: #0A0A0A;
-  font-family: "WorkSans";
+  font-family: "GeneralSans";
 }
 
 header .container h1 span {
   color: #0CDC12;
-  font-family: "WorkSans";
+  font-family: "GeneralSans";
 }
 
 header .container p {
   margin-top: 2rem;
   font-size: 1.5em;
   color: #4F5163;
+  font-family: "GeneralSans";
 }
 
 header .container .anchor-link {
@@ -1268,6 +1269,133 @@ header .container .anchor-link {
   font-size: 1.3em;
 }
 
+/* FAQ */
+.faq-section {
+  padding: 5rem 0;
+}
+
+.faq-section .title {
+  font-family: "WorkSans";
+  font-weight: bolder;
+}
+
+.faq-section .faq-card {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 0.5rem;
+}
+
+.faq-section .faq-card .faq {
+  /* Accordion styles */
+}
+
+.faq-section .faq-card .faq .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d9dbe9;
+  margin: 0.5rem 0;
+}
+
+.faq-section .faq-card .faq input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.faq-section .faq-card .faq .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.faq-section .faq-card .faq .row .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.faq-section .faq-card .faq .tabs {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-section .faq-card .faq .tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.faq-section .faq-card .faq .tab-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  background: #fff;
+  font-weight: normal;
+  cursor: pointer;
+  color: #0B0706;
+  font-weight: bold;
+  font-family: "GeneralSans";
+  /* Icon */
+}
+
+.faq-section .faq-card .faq .tab-label::after {
+  content: "\002B";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.faq-section .faq-card .faq .tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #6f6c90;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  font-family: "DmSans";
+}
+
+.faq-section .faq-card .faq .tab-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #0CDC12;
+  cursor: pointer;
+}
+
+.faq-section .faq-card .faq .tab-close:hover {
+  background: #09ac0e;
+}
+
+.faq-section .faq-card .faq input:checked + .tab-label {
+  color: #0CDC12;
+}
+
+.faq-section .faq-card .faq input:checked + .tab-label::after {
+  content: "\2212";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #0CDC12;
+}
+
+.faq-section .faq-card .faq input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
 /**********************/
 /*        Footer      */
 /**********************/
@@ -1276,45 +1404,41 @@ footer {
   background-color: #0B0706;
 }
 
-footer h5 {
+footer .address {
   color: #fff;
+}
+
+footer .address div {
+  margin: 1rem 0;
   font-family: "WorkSans";
+  color: #e5e5e5;
 }
 
-footer .brand-name {
-  font-size: 2.4em;
-  color: #fff;
-  font-weight: bold;
+footer .contact-email {
+  margin: 2rem 0;
+}
+
+footer .contact-email a {
+  color: #e5e5e5;
   font-family: "WorkSans";
-}
-
-footer .about {
-  color: #fff;
-  font-size: 1.14em;
-}
-
-footer .footer-anchor-link a {
-  display: block;
-  color: #fff;
-  font-size: 0.95em;
-  margin: 1rem 0 0 1rem;
-  font-family: "WorkSans";
-}
-
-footer .footer-anchor-link a:hover {
-  color: #fff;
+  padding: 1rem;
+  border-radius: 1.3rem;
+  background-color: #191919;
 }
 
 footer .all-rights-reserved {
   width: 100%;
   margin-top: 1.5rem;
   padding: 1rem 0;
-  background-color: #fff;
+  background-color: #0B0706;
 }
 
 footer .all-rights-reserved p {
   width: 86%;
+  font-size: 1em;
+  font-family: "WorkSans";
   margin: 0 auto;
+  color: #e5e5e5;
 }
 
 @media screen and (max-width: 1200px) {
